@@ -29,7 +29,8 @@
 
 ## ID suara narator
 
-- Status: BELUM AUDISI. Audisi dengan pemilik sebelum episode pertama.
+- Status: AUDISI BERJALAN. Kandidat A=piper id_ID-news_tts-medium (pria, MIT);
+  B=chatterbox-id + prompt CV pria CC0 (Apache-2.0). Klip di bukti/2e-vo/ usai CI.
 
 ## Riwayat topik (judul episode lama - JANGAN DIULANG)
 

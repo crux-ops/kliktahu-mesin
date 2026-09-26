@@ -1,0 +1,28 @@
+# Bukti E (VO + audisi): env mandiri, numpy 1.26 (syarat chatterbox-tts 0.1.1).
+# torch CPU dari indeks PyTorch agar ringan (~200MB, bukan CUDA ~2GB).
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+numpy==1.26.0
+scipy==1.17.1
+pillow==12.3.0
+soundfile==0.14.0
+imageio-ffmpeg==0.6.0
+skia-python==144.0.post2
+pedalboard==0.9.25
+pyloudnorm==0.2.0
+piper-tts==1.8.0
+torch==2.6.0
+torchaudio==2.6.0
+transformers==4.46.3
+librosa==0.10.0
+resampy==0.4.3
+diffusers==0.29.0
+resemble-perth==1.0.1
+omegaconf==2.3.0
+conformer==0.3.2
+safetensors==0.5.3
+s3tokenizer
+chatterbox-tts==0.1.1
+faster-whisper==1.2.1
+huggingface_hub>=0.24,<1
+datasets>=3.0,<4

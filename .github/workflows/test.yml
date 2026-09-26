@@ -77,3 +77,47 @@ jobs:
           git add bukti/
           git diff --cached --quiet && echo "bukti tak berubah" || (
             git commit -q -m "Bukti: A + B + C + SFX D [skip ci]" && git push)
+
+  bukti-e:
+    needs: uji
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-vo.txt
+      - name: Pustaka sistem untuk Skia
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libgl1 libfontconfig1
+      - name: Pasang dependensi VO
+        run: pip install -q -r requirements-vo.txt
+      - name: Bukti Bagian E (VO + audisi)
+        run: |
+          kode=0
+          python -m kt.proof_e --outdir proof-e > hasil-proof-e.txt 2>&1 || kode=$?
+          tail -c 2000 hasil-proof-e.txt
+          python tools/anotasi_gagal.py $kode hasil-proof-e.txt "Ekor bukti E"
+          exit $kode
+      - name: Unggah bukti E
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bukti-mesin-e
+          path: |
+            proof-e/*
+            hasil-proof-e.txt
+          retention-days: 14
+      - name: Simpan bukti E ke branch
+        if: success() && github.event_name == 'push'
+        run: |
+          mkdir -p bukti/2e-vo
+          cp proof-e/*.png proof-e/*.wav bukti/2e-vo/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bukti/
+          git diff --cached --quiet && echo "bukti tak berubah" || (
+            git commit -q -m "Bukti: VO E [skip ci]" && git push)

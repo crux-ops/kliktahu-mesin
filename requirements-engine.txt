@@ -7,3 +7,5 @@ scipy==1.17.1
 soundfile==0.14.0
 pytest>=8
 faster-whisper==1.2.1
+pedalboard==0.9.25
+pyloudnorm==0.2.0
