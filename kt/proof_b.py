@@ -94,7 +94,7 @@ def draw_kinetic_row(r, y):
     x0 = (1080 - (6 * cw + 5 * 12)) / 2
     yy = y + 44
     cells = ["rise 0.00", "rise 0.33", "rise 0.66", "rise 1.00",
-             "words 0.5", "pop 0.6"]
+             "words 0.75", "pop 0.6"]
     for i, label in enumerate(cells):
         x = x0 + i * (cw + 12)
         c.drawRoundRect(skia.Rect.MakeXYWH(x, yy, cw, chh), 14, 14,
@@ -107,7 +107,7 @@ def draw_kinetic_row(r, y):
         elif label.startswith("words"):
             kinetic_words(tc, c, cx, yy + chh / 2, "OTAK CERAH",
                           "Poppins-Bold.ttf", 24,
-                          argb(255, 246, 241, 232), 0.5)
+                          argb(255, 246, 241, 232), 0.75)
         else:
             kinetic_pop(tc, c, cx, yy + chh / 2, "POP!", "Poppins-Bold.ttf",
                         44, GOLD, 0.6)
@@ -115,7 +115,7 @@ def draw_kinetic_row(r, y):
         tc.draw_center(c, cx, yy + chh + 22, label,
                        "Poppins-Regular.ttf", 22, INK)
     ty = yy + chh + 48
-    for j, tt in enumerate((0.2, 0.5, 1.0)):
+    for j, tt in enumerate((0.2, 0.5, 1.5)):
         s = typewriter_text("JANTUNG MEMOMPA", tt, cps=10.0)
         tc.draw_center(c, 540, ty + j * 36, f"ketik t={tt}: '{s}|'",
                        "Poppins-Regular.ttf", 28, INK)
