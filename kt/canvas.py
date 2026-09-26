@@ -34,7 +34,7 @@ def fill_paint(color, aa=True):
     p = skia.Paint()
     p.setColor(color)
     p.setAntiAlias(aa)
-    p.setStyle(skia.Paint.Style.kFill)
+    p.setStyle(skia.Paint.Style.kFill_Style)
     return p
 
 
@@ -42,7 +42,7 @@ def stroke_paint(color, width, aa=True):
     p = skia.Paint()
     p.setColor(color)
     p.setAntiAlias(aa)
-    p.setStyle(skia.Paint.Style.kStroke)
+    p.setStyle(skia.Paint.Style.kStroke_Style)
     p.setStrokeWidth(float(width))
     return p
 
@@ -129,7 +129,7 @@ def soft_shadow(canvas, x, y, w, h, r, dy=14, sigma=22, alpha=110):
     tc.drawRoundRect(skia.Rect.MakeXYWH(pad, pad, w, h), r, r,
                      fill_paint(argb(255, 0, 0, 0)))
     snap = tmp.makeImageSnapshot()
-    canvas.drawImage(snap, x - pad, y - pad + dy, blur_paint(sigma, alpha))
+    canvas.drawImage(snap, x - pad, y - pad + dy, paint=blur_paint(sigma, alpha))
 
 
 def glass_panel(surface, x, y, w, h, r, blur=22, tint=(255, 255, 255, 46),
@@ -139,7 +139,7 @@ def glass_panel(surface, x, y, w, h, r, blur=22, tint=(255, 255, 255, 46),
     snap = surface.makeImageSnapshot()
     canvas.save()
     canvas.clipRRect(rrect_of(x, y, w, h, r), skia.ClipOp.kIntersect, True)
-    canvas.drawImage(snap, 0, 0, blur_paint(blur))
+    canvas.drawImage(snap, 0, 0, paint=blur_paint(blur))
     tr, tg, tb, ta = tint[0], tint[1], tint[2], tint[3]
     canvas.drawRect(skia.Rect.MakeXYWH(x, y, w, h), fill_paint(argb(ta, tr, tg, tb)))
     canvas.restore()

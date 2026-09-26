@@ -30,7 +30,7 @@ def draw_sheet(r: Renderer, seed: int):
     # kepala: gradien + judul
     c.drawRect(skia.Rect.MakeXYWH(0, 0, W, 300),
                linear_gradient_paint(0, 0, W, 300, hex_to_argb("#23232B"), hex_to_argb("#3A3A44")))
-    r.text.draw_center(c, W / 2, 120, "KLikTAHU ENGINE v3", "Poppins-Bold.ttf", 84,
+    r.text.draw_center(c, W / 2, 120, "KLIKTAHU ENGINE v3", "Poppins-Bold.ttf", 84,
                        argb(255, 246, 241, 232))
     r.text.draw_center(c, W / 2, 210, "bukti renderer skia - deterministik", "Poppins-Regular.ttf", 40,
                        argb(255, 200, 195, 185))
