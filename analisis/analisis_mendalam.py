@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Analisis mendalam KlikTahu: gabung SEMUA data frasa + skor multi-sinyal.
+"""Analisis mendalam KlikTahu: skor multi-sinyal dari data frasa terpadu.
 
-Sumber frasa (dengan provenance mesin Google/YouTube bila tersedia):
-  1. klaster_besar.json              977 frasa (sapuan 18 Sep 2026, tanpa provenance)
-  2. peta_kata_kunci_2026-09-19.json seed -> {G:[...], Y:[...]} (ada provenance!)
-  3. klaster_terbaru.json            570 frasa mentah
-  4. klaster_2026-09-19.json         niche -> [frasa, bobot, sumber GY/G/Y]
+Masukan: gabungan_frasa_2026-09-26.json (1.420 frasa unik + provenance Google/YouTube,
+hasil penggabungan 4 sumber sapuan 18-19 Sep 2026; file sumber lama sudah dibersihkan
+pada Tahap 0 upgrade mesin).
 
 Skor per TOPIK (0-100, transparan):
   VOL    (30%) volume permintaan: frasa unik + bonus frasa pendek + bobot lama
@@ -131,43 +129,16 @@ def norm(s):
 
 def main():
     F = {}  # frasa -> {G:bool, Y:bool, seeds:set, niche:set, bobot:float}
-
-    def add(f, G=False, Y=False, seed=None, niche=None, bobot=0.0):
-        f = norm(f)
-        if not f or len(f) > 120:
-            return
-        e = F.setdefault(f, {"G": False, "Y": False, "seeds": set(), "niche": set(), "bobot": 0.0})
-        e["G"] = e["G"] or G; e["Y"] = e["Y"] or Y
-        if seed: e["seeds"].add(seed)
-        if niche: e["niche"].add(niche)
-        e["bobot"] = max(e["bobot"], bobot)
-
-    d1 = json.load(open(os.path.join(BASE, "klaster_besar.json")))
-    for f in d1["frasa"]:
-        add(f)
-    d2 = json.load(open(os.path.join(BASE, "peta_kata_kunci_2026-09-19.json")))
-    for seed, v in d2.items():
-        for f in v.get("G", []): add(f, G=True, seed=seed)
-        for f in v.get("Y", []): add(f, Y=True, seed=seed)
-    d3 = json.load(open(os.path.join(BASE, "klaster_terbaru.json")))
-    for f in d3["mentah"]:
-        add(f)
-    d4 = json.load(open(os.path.join(BASE, "klaster_2026-09-19.json")))
-    for niche, rows in d4.items():
-        for f, b, src in rows:
-            add(f, G=("G" in src), Y=("Y" in src), niche=niche, bobot=float(b))
+    G = json.load(open(os.path.join(BASE, "gabungan_frasa_2026-09-26.json")))
+    for f, e in G.items():
+        F[f] = {"G": bool(e["G"]), "Y": bool(e["Y"]), "seeds": set(e["seeds"]),
+                "niche": set(e["niche"]), "bobot": float(e["bobot"])}
 
     print(f"frasa unik gabungan: {len(F)}")
     gy = sum(1 for e in F.values() if e["G"] and e["Y"])
     print(f"  berprovenance GY: {gy}, hanya-G: {sum(1 for e in F.values() if e['G'] and not e['Y'])}, "
           f"hanya-Y: {sum(1 for e in F.values() if e['Y'] and not e['G'])}, "
           f"tanpa provenance: {sum(1 for e in F.values() if not e['G'] and not e['Y'])}")
-
-    json.dump({f: {"G": e["G"], "Y": e["Y"], "seeds": sorted(e["seeds"]),
-                      "niche": sorted(e["niche"]), "bobot": e["bobot"]}
-               for f, e in sorted(F.items())},
-              open(os.path.join(BASE, "gabungan_frasa_2026-09-26.json"), "w"),
-              ensure_ascii=False, indent=1)
 
     # ---- skor per topik ----
     hasil = []

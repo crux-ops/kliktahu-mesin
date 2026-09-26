@@ -60,7 +60,7 @@
     "Y": true
    },
    {
-    "f": "kenapa internet lambat hari ini",
+    "f": "bagaimana cara kerja wifi extender",
     "G": true,
     "Y": false
    },
@@ -75,7 +75,7 @@
     "Y": false
    },
    {
-    "f": "bagaimana cara kerja wifi extender",
+    "f": "kenapa internet lambat hari ini",
     "G": true,
     "Y": false
    }
@@ -417,12 +417,12 @@
     "Y": true
    },
    {
-    "f": "berapa meter dalam palung mariana",
+    "f": "berapa km dalam palung mariana",
     "G": true,
     "Y": false
    },
    {
-    "f": "berapa km dalam palung mariana",
+    "f": "berapa meter dalam palung mariana",
     "G": true,
     "Y": false
    },
@@ -548,12 +548,12 @@
   "ever": 0,
   "top_frasa": [
    {
-    "f": "apa itu lubang hitam",
+    "f": "apa itu black hole",
     "G": true,
     "Y": true
    },
    {
-    "f": "apa itu black hole",
+    "f": "apa itu lubang hitam",
     "G": true,
     "Y": true
    },
@@ -593,12 +593,12 @@
     "Y": true
    },
    {
-    "f": "apa dalam black hole",
+    "f": "apa arti black hole",
     "G": false,
     "Y": true
    },
    {
-    "f": "apa arti black hole",
+    "f": "apa dalam black hole",
     "G": false,
     "Y": true
    },
@@ -759,12 +759,12 @@
     "Y": false
    },
    {
-    "f": "bagaimana cara kerja otak yang anda ketahui",
+    "f": "bagaimana cara kerja otak untuk mengendalikan gerakan gerakan pernapasan",
     "G": true,
     "Y": false
    },
    {
-    "f": "bagaimana cara kerja otak untuk mengendalikan gerakan gerakan pernapasan",
+    "f": "bagaimana cara kerja otak yang anda ketahui",
     "G": true,
     "Y": false
    },
@@ -827,7 +827,7 @@
     "Y": false
    },
    {
-    "f": "berapa besar matahari dibanding bumi",
+    "f": "berapa besar matahari berbanding bumi",
     "G": true,
     "Y": false
    },
@@ -837,7 +837,7 @@
     "Y": false
    },
    {
-    "f": "berapa besar matahari berbanding bumi",
+    "f": "berapa besar matahari dibanding bumi",
     "G": true,
     "Y": false
    },
@@ -1091,12 +1091,12 @@
     "Y": true
    },
    {
-    "f": "kenapa mata kanan berkedip",
+    "f": "kenapa mata harus berkedip",
     "G": false,
     "Y": true
    },
    {
-    "f": "kenapa mata harus berkedip",
+    "f": "kenapa mata kanan berkedip",
     "G": false,
     "Y": true
    },
@@ -1121,12 +1121,12 @@
     "Y": true
    },
    {
-    "f": "kenapa mata sering berkedip kedip",
+    "f": "kenapa mata saat berkedip sakit",
     "G": false,
     "Y": true
    },
    {
-    "f": "kenapa mata saat berkedip sakit",
+    "f": "kenapa mata sering berkedip kedip",
     "G": false,
     "Y": true
    }
@@ -1536,12 +1536,12 @@
     "Y": true
    },
    {
-    "f": "kenapa telinga sering berdenging",
+    "f": "kenapa telinga bisa berdenging",
     "G": false,
     "Y": true
    },
    {
-    "f": "kenapa telinga bisa berdenging",
+    "f": "kenapa telinga sering berdenging",
     "G": false,
     "Y": true
    },
@@ -1566,7 +1566,7 @@
     "Y": false
    },
    {
-    "f": "kenapa telinga berdenging terus",
+    "f": "kenapa telinga berdenging sebelah",
     "G": true,
     "Y": false
    }
@@ -1795,12 +1795,12 @@
     "Y": true
    },
    {
-    "f": "apa itu aurora store",
+    "f": "apa itu aurora australis",
     "G": true,
     "Y": false
    },
    {
-    "f": "apa itu aurora australis",
+    "f": "apa itu aurora store",
     "G": true,
     "Y": false
    },
@@ -2263,6 +2263,11 @@
     "Y": false
    },
    {
+    "f": "kenapa gunung berapi bisa meletus",
+    "G": false,
+    "Y": false
+   },
+   {
     "f": "kenapa gunung meletus ada petir",
     "G": false,
     "Y": false
@@ -2279,11 +2284,6 @@
    },
    {
     "f": "kenapa gunung meletus keluar petir",
-    "G": false,
-    "Y": false
-   },
-   {
-    "f": "kenapa gunung berapi bisa meletus",
     "G": false,
     "Y": false
    }
@@ -2351,12 +2351,12 @@
     "Y": true
    },
    {
-    "f": "misteri di balik piramida mesir",
+    "f": "kenapa menara pisa miring gombal",
     "G": true,
     "Y": false
    },
    {
-    "f": "kenapa menara pisa miring gombal",
+    "f": "misteri di balik piramida mesir",
     "G": true,
     "Y": false
    },
@@ -2444,12 +2444,12 @@
     "Y": false
    },
    {
-    "f": "apa itu gravitasi matahari",
+    "f": "apa itu gravitasi kuantum",
     "G": true,
     "Y": false
    },
    {
-    "f": "apa itu gravitasi kuantum",
+    "f": "apa itu gravitasi matahari",
     "G": true,
     "Y": false
    },
@@ -2668,12 +2668,12 @@
     "Y": false
    },
    {
-    "f": "bagaimana pelangi terbentuk tahun 4",
+    "f": "bagaimana pelangi terbentuk setelah hujan",
     "G": true,
     "Y": false
    },
    {
-    "f": "bagaimana pelangi terbentuk setelah hujan",
+    "f": "bagaimana pelangi terbentuk tahun 4",
     "G": true,
     "Y": false
    },
@@ -3048,22 +3048,22 @@
     "Y": false
    },
    {
-    "f": "kenapa anjing menggonggong saat melihat kita",
-    "G": true,
-    "Y": false
-   },
-   {
     "f": "kenapa anjing menggonggong saat adzan subuh",
     "G": true,
     "Y": false
    },
    {
-    "f": "kenapa anjing menggonggong jam 3 pagi",
+    "f": "kenapa anjing menggonggong saat melihat kita",
     "G": true,
     "Y": false
    },
    {
     "f": "kenapa anjing menggonggong di depan rumah",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa anjing menggonggong jam 3 pagi",
     "G": true,
     "Y": false
    }
@@ -3174,17 +3174,17 @@
     "Y": false
    },
    {
+    "f": "dinosaurus tidak ada di indonesia",
+    "G": true,
+    "Y": false
+   },
+   {
     "f": "kenapa dinosaurus punah menurut islam",
     "G": true,
     "Y": false
    },
    {
     "f": "kenapa dinosaurus punah tebak tebakan",
-    "G": true,
-    "Y": false
-   },
-   {
-    "f": "dinosaurus tidak ada di indonesia",
     "G": true,
     "Y": false
    }
@@ -3247,17 +3247,17 @@
     "Y": false
    },
    {
-    "f": "bagaimana proses awan terbentuk",
-    "G": true,
-    "Y": false
-   },
-   {
     "f": "bagaimana awan hitam terbentuk",
     "G": true,
     "Y": false
    },
    {
     "f": "bagaimana awan hujan terbentuk",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana proses awan terbentuk",
     "G": true,
     "Y": false
    },
@@ -3418,7 +3418,7 @@
     "Y": false
    },
    {
-    "f": "jelaskan apa itu kecerdasan buatan",
+    "f": "apa itu fenomena kecerdasan buatan",
     "G": true,
     "Y": false
    },
@@ -3428,7 +3428,7 @@
     "Y": false
    },
    {
-    "f": "apa itu fenomena kecerdasan buatan",
+    "f": "jelaskan apa itu kecerdasan buatan",
     "G": true,
     "Y": false
    },
@@ -3693,12 +3693,12 @@
   "ever": 0,
   "top_frasa": [
    {
-    "f": "kenapa kencing terus",
+    "f": "kenapa kencing berbusa",
     "G": false,
     "Y": false
    },
    {
-    "f": "kenapa kencing berbusa",
+    "f": "kenapa kencing terus",
     "G": false,
     "Y": false
    },

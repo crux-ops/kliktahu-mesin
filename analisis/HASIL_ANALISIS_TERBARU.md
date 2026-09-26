@@ -4,7 +4,6 @@
 > 1.420 frasa, 54 topik, 6 sinyal skor, 9 niche.
 > Paket metadata siap pakai (judul + deskripsi + tag + hashtag + komentar pin):
 > [`PAKET_METADATA.md`](PAKET_METADATA.md).
-> Arsip sapuan 18 Sep: [`HASIL_ANALISIS_2026-09-18.md`](HASIL_ANALISIS_2026-09-18.md).
 
 **Sumber:** Google Autocomplete (hl=id, gl=id) + YouTube Autocomplete (ds=yt, gl=id),
 ditarik 18-19 Sep 2026, dianalisis ulang mendalam 26 Sep 2026.
