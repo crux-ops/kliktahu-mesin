@@ -194,11 +194,12 @@ def main():
     kal = kal if len(kal) <= 42 else kal[:42] + "..."
     linesA, vonisA = panel_stat_lines("A", V.PIPER_VOICE + " (MIT)", rA, qcA,
                                       lipA, det_a, hA, pp["sr"])
+    sumber = prompt_meta.get("sumber", "cv")
     linesB, vonisB = panel_stat_lines(
         "B", "chatterbox-id (Apache-2.0)", rB, qcB, lipB, det_b, hB,
-        int(model.sr), extra=[f"prompt CV {repo_pendek} F0 {f0p:.0f} Hz pria",
+        int(model.sr), extra=[f"prompt {sumber} {repo_pendek} F0 {f0p:.0f} Hz",
                               f'"{kal}"'] if f0p else
-        [f"prompt CV {repo_pendek}", f'"{kal}"'])
+        [f"prompt {sumber} {repo_pendek}", f'"{kal}"'])
     stat_a = ("A. PIPER id_ID-news_tts-medium (pria, MIT)",
               {"y": rA["y"], "lines": linesA}, TEAL)
     stat_b = ("B. CHATTERBOX-ID + prompt Common Voice pria (CC0)",

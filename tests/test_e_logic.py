@@ -128,6 +128,27 @@ def test_f0():
     assert V.f0_median(np.zeros(SR, dtype=np.float32), SR) is None
 
 
+def test_f0_oktaf():
+    # tiruan suara pria: H1 lemah, harmonik kuat -> tetap ~130, bukan 260
+    t = np.arange(2 * SR) / float(SR)
+    x = (0.3 * np.sin(2 * np.pi * 130 * t)
+         + 1.0 * np.sin(2 * np.pi * 260 * t)
+         + 0.8 * np.sin(2 * np.pi * 390 * t)
+         + 0.5 * np.sin(2 * np.pi * 520 * t)).astype(np.float32) / 2.6
+    assert V.f0_median(x, SR) == pytest.approx(130.0, abs=8.0)
+    # nada murni tak ikut terkoreksi turun
+    assert V.f0_median(nada(220.0, 1.0), SR) == pytest.approx(220.0, abs=3.0)
+
+
+def test_batas_lunak():
+    panas = nada(440.0, 0.5, amp=1.5)
+    y = V.batas_lunak(panas)
+    assert V.puncak_db(y) <= -1.0 + 1e-9
+    assert np.array_equal(y, V.batas_lunak(panas))
+    dingin = nada(440.0, 0.5, amp=0.3)  # di bawah lutut -> tak tersentuh
+    assert np.array_equal(V.batas_lunak(dingin), dingin)
+
+
 def test_gender():
     assert V.tebak_gender(140.0) == "pria"
     assert V.tebak_gender(159.9) == "pria"

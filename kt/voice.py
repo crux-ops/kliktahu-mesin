@@ -228,8 +228,26 @@ def tebak_gender(f0):
     return "tak-pasti"
 
 
+def batas_lunak(x, batas_db=PEAK_BATAS_DB, lutut_db=3.0):
+    """Pembatas lunak: di bawah lutut tak tersentuh, puncak dibatasi halus.
+
+    Perlu karena puncak global setelah normalisasi LUFS bisa > -1 dBFS
+    (faktor kres ucapan); limiter siaran bekerja dengan cara yang sama.
+    """
+    x = np.asarray(x, dtype=np.float32).reshape(-1)
+    t = 10.0 ** (float(batas_db) / 20.0)
+    k = 10.0 ** ((float(batas_db) - float(lutut_db)) / 20.0)
+    a = np.abs(x).astype(np.float64)
+    y = x.astype(np.float64).copy()
+    over = a > k
+    if np.any(over):
+        y[over] = (np.sign(x[over])
+                   * (k + (t - k) * np.tanh((a[over] - k) / (t - k))))
+    return y.astype(np.float32)
+
+
 def rantai_vo(x, sr_asal, n_kata, rentang_kata=None):
-    """Rantai penuh: 48k -> pace -> -14 LUFS -> jaga puncak -> QC.
+    """Rantai penuh: 48k -> pace -> -14 LUFS + limiter -> QC.
 
     Kembalikan dict(y, pace_awal/akhir, lufs_masuk/akhir, puncak_db,
     diskala_puncak, qc, f0_median, gender, lolos, sr).
@@ -243,8 +261,18 @@ def rantai_vo(x, sr_asal, n_kata, rentang_kata=None):
         z = regang_ke_pace(y, SR, pace_awal, TARGET_PACE)
     pace_akhir = ukur_pace(n_kata, z.size / SR)
     lufs_masuk = ukur_lufs(z, SR)
+    if puncak_db(z) > 6.0:  # pengaman kasar (seharusnya tak terjadi)
+        z, _, _ = jaga_puncak(z, 0.0)
     w = normalisasi_lufs(z, SR, TARGET_LUFS)
-    w, puncak, diskala = jaga_puncak(w, PEAK_BATAS_DB)
+    for _ in range(3):
+        w = batas_lunak(w)
+        if (abs(ukur_lufs(w, SR) - TARGET_LUFS) <= TOL_LUFS
+                and puncak_db(w) <= PEAK_BATAS_DB + 1e-9):
+            break
+        w = normalisasi_lufs(w, SR, TARGET_LUFS)
+    w = batas_lunak(w)
+    puncak = puncak_db(w)
+    diskala = puncak_db(normalisasi_lufs(z, SR, TARGET_LUFS)) > PEAK_BATAS_DB
     lufs_akhir = ukur_lufs(w, SR)
     qc = celah_hilang(w, SR, rentang_kata)
     f0 = f0_median(w, SR)
@@ -310,20 +338,31 @@ def pastikan_piper(cache_dir):
 
 
 def muat_piper(onnx, js):
-    """Muat suara Piper (CPU)."""
+    """Muat suara Piper (CPU, 1 utas demi determinisme)."""
+    import onnxruntime as ort
     from piper import PiperVoice
-    return PiperVoice.load(str(onnx), str(js))
+    voice = PiperVoice.load(str(onnx), str(js))
+    opts = ort.SessionOptions()
+    opts.intra_op_num_threads = 1
+    opts.inter_op_num_threads = 1
+    voice.session = ort.InferenceSession(
+        str(onnx), sess_options=opts, providers=["CPUExecutionProvider"])
+    return voice
 
 
 def sintesis_piper(voice, teks, sr, length_scale=None, seed=SEED):
-    """Teks -> audio 48k via Piper. length_scale>1 = lebih lambat."""
+    """Teks -> audio 48k via Piper. length_scale>1 = lebih lambat.
+
+    normalize_audio=False: keluaran mentah model (tanpa kliping paksa ke
+    skala penuh); rantai VO yang mengatur kenyaringan + puncak.
+    """
     import random
     from piper import SynthesisConfig
     random.seed(seed)
     np.random.seed(seed % (2 ** 32))
-    cfg = None
-    if length_scale is not None:
-        cfg = SynthesisConfig(length_scale=float(length_scale))
+    cfg = SynthesisConfig(length_scale=(None if length_scale is None
+                                        else float(length_scale)),
+                          normalize_audio=False)
     pot = []
     for c in voice.synthesize(str(teks), syn_config=cfg):
         pot.append(np.asarray(c.audio_int16_array, dtype=np.float32)
@@ -358,13 +397,104 @@ def sintesis_chatterbox(model, teks, prompt_wav, temperature=0.8, seed=SEED):
     return ke_48k(x, int(model.sr))
 
 
-def ambil_prompt_cv(cache_dir):
-    """Ambil 1 klip pria Common Voice (CC0) Indonesia ter-validasi.
+def _repo_cv_terbaru():
+    """Cari repo Common Voice Mozilla terbaru lewat API Hub."""
+    from huggingface_hub import list_datasets
+    cands = []
+    for ds in list_datasets(author="mozilla-foundation",
+                            search="common_voice"):
+        nama = ds.id.split("/")[-1]
+        if nama.startswith("common_voice_"):
+            cands.append(ds.id)
+    if not cands:
+        raise RuntimeError("tak ada repo common_voice di mozilla-foundation")
 
-    Pilih deterministik: cantum validasi pertama bergender pria, dur >=1 dtk.
+    def kunci(rid):
+        angka = "".join(ch if ch.isdigit() else " " for ch in rid).split()
+        return tuple(int(p) for p in angka) if angka else (0,)
+    cands.sort(key=kunci, reverse=True)
+    return cands[0]
+
+
+def _audio_ke_array(au):
+    au = au or {}
+    arr = au.get("array")
+    if arr is None and au.get("bytes"):
+        return _dekode_mp3(au["bytes"]), 48000
+    return arr, int(au.get("sampling_rate") or 0)
+
+
+def _coba_prompt_cv():
+    """Lempar (arr_48k, meta) dari Common Voice id, atau raise berpesan."""
+    from datasets import load_dataset
+    repo = _repo_cv_terbaru()
+    try:
+        ds = load_dataset(repo, "id", split="validated", streaming=True)
+    except Exception as e:
+        raise RuntimeError(f"{repo}: {type(e).__name__} {e}")
+    PILIH = {"male", "masculine", "m", "pria", "laki-laki"}
+    for ex in ds:
+        g = str(ex.get("gender") or "").strip().lower()
+        if g not in PILIH:
+            continue
+        arr, au_sr = _audio_ke_array(ex.get("audio"))
+        if arr is None or au_sr <= 0:
+            continue
+        arr = np.asarray(arr, dtype=np.float32).reshape(-1)
+        if arr.size / au_sr < 1.0:
+            continue
+        meta = {"sumber": "common_voice", "lisensi": "CC0-1.0", "repo": repo,
+                "kalimat": str(ex.get("sentence") or ""), "gender": g,
+                "sr_asal": au_sr, "dur_asal": arr.size / au_sr}
+        return ke_48k(arr, au_sr), meta
+    raise RuntimeError(f"{repo}: tak ada klip pria")
+
+
+def _coba_prompt_fleurs():
+    """Cadangan: FLEURS Indonesia (CC-BY-4.0), pilih pria via F0."""
+    from datasets import get_dataset_config_names, load_dataset
+    repo = "google/fleurs"
+    try:
+        cfgs = get_dataset_config_names(repo)
+    except Exception as e:
+        raise RuntimeError(f"{repo}: {type(e).__name__} {e}")
+    cfg = "id_id" if "id_id" in cfgs else None
+    if cfg is None:
+        idmulai = sorted(c for c in cfgs if c.startswith("id"))
+        if not idmulai:
+            raise RuntimeError(f"{repo}: tanpa config id")
+        cfg = idmulai[0]
+    try:
+        ds = load_dataset(repo, cfg, split="test", streaming=True)
+    except Exception as e:
+        raise RuntimeError(f"{repo}/{cfg}: {type(e).__name__} {e}")
+    for ex in ds:
+        arr, au_sr = _audio_ke_array(ex.get("audio"))
+        if arr is None or au_sr <= 0:
+            continue
+        arr = np.asarray(arr, dtype=np.float32).reshape(-1)
+        dur = arr.size / au_sr
+        if not 2.0 <= dur <= 12.0:
+            continue
+        a48 = ke_48k(arr, au_sr)
+        f0 = f0_median(a48, SR)
+        if f0 is None or not 85.0 <= f0 <= 170.0:
+            continue
+        meta = {"sumber": "fleurs", "lisensi": "CC-BY-4.0 Google",
+                "repo": f"{repo}/{cfg}",
+                "kalimat": str(ex.get("transcription") or ""),
+                "gender": "pria(F0)", "sr_asal": au_sr, "dur_asal": dur,
+                "utt": str(ex.get("id") or ""), "f0": f0}
+        return a48, meta
+    raise RuntimeError(f"{repo}/{cfg}: tak ada klip pria (F0)")
+
+
+def ambil_prompt_cv(cache_dir):
+    """Ambil 1 klip pria Indonesia untuk prompt kandidat B.
+
+    Urutan: Common Voice (CC0) -> FLEURS (CC-BY-4.0, pilih via F0).
     Kembalikan (path_wav_48k, meta).
     """
-    from datasets import load_dataset
     d = os.path.join(str(cache_dir), "cv")
     os.makedirs(d, exist_ok=True)
     out = os.path.join(d, "prompt_cv_pria.wav")
@@ -372,45 +502,20 @@ def ambil_prompt_cv(cache_dir):
     if os.path.exists(out) and os.path.exists(meta_path):
         with open(meta_path, encoding="utf-8") as f:
             return out, json.load(f)
-    ds = None
-    repo_pakai = None
-    for repo in CV_REPOS:
+    galat = []
+    for nama, fn in (("common_voice", _coba_prompt_cv),
+                     ("fleurs", _coba_prompt_fleurs)):
         try:
-            ds = load_dataset(repo, "id", split="validated", streaming=True)
-            repo_pakai = repo
-            break
-        except Exception:
-            ds = None
-    if ds is None:
-        raise RuntimeError("tak bisa membuka Common Voice: " + ",".join(CV_REPOS))
-    PILIH = {"male", "masculine", "m", "pria", "laki-laki"}
-    pilih = None
-    for ex in ds:
-        g = str(ex.get("gender") or "").strip().lower()
-        if g not in PILIH:
-            continue
-        au = ex.get("audio") or {}
-        arr = au.get("array")
-        if arr is None and au.get("bytes"):
-            arr = _dekode_mp3(au["bytes"])
-            au_sr = 48000
-        else:
-            au_sr = int(au.get("sampling_rate") or 0)
-        if arr is None or au_sr <= 0:
-            continue
-        arr = np.asarray(arr, dtype=np.float32).reshape(-1)
-        if arr.size / au_sr < 1.0:
-            continue
-        pilih = {"repo": repo_pakai, "kalimat": str(ex.get("sentence") or ""),
-                 "gender": g, "sr_asal": au_sr,
-                 "dur_asal": arr.size / au_sr}
-        tulis_wav_16(out, ke_48k(arr, au_sr), SR)
-        break
-    if pilih is None:
-        raise RuntimeError("tak ada klip pria di Common Voice id")
-    with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(pilih, f, ensure_ascii=False, indent=1)
-    return out, pilih
+            arr, meta = fn()
+            tulis_wav_16(out, arr, SR)
+            with open(meta_path, "w", encoding="utf-8") as f:
+                json.dump(meta, f, ensure_ascii=False, indent=1)
+            print(f"prompt: {nama} {meta['repo']}", flush=True)
+            return out, meta
+        except Exception as e:
+            galat.append(f"{nama}: {e}")
+            print(f"prompt {nama} gagal: {e}", flush=True)
+    raise RuntimeError("prompt gagal: " + " | ".join(galat))
 
 
 def _dekode_mp3(data):
