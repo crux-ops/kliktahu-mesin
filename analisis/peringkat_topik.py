@@ -8,10 +8,11 @@ Menghitung untuk setiap topik:
   - sains : kecocokan dengan ceruk channel KlikTahu (mekanisme, bisa dijelaskan tuntas)
 Skor  = jml + kuat*0.7 + niat*0.9 + sains*3
 """
-import json, re
+import json, re, os
 from collections import Counter
 
-D = json.load(open("/home/user/shorts/analisis/klaster_besar.json"))
+BASE = os.path.dirname(os.path.abspath(__file__))
+D = json.load(open(os.path.join(BASE, "klaster_besar.json")))
 frasa = D["frasa"]
 
 UMUM = set("""terus cepat padahal sering habis naik turun bunyi sakit perut terjadi kurang hilang
@@ -54,5 +55,5 @@ print(f"{'skor':>7} {'jml':>4} {'kuat':>5} {'niat':>5} {'sains':>5}  topik")
 for r in baris[:16]:
     print(f"{r['skor']:7.1f} {r['jml']:4d} {r['kuat']:5d} {r['niat']:5d} {r['sains']:5.1f}  {r['topik']:12s} "
           f"{' | '.join(r['contoh'])[:70]}")
-json.dump(baris, open("/home/user/shorts/analisis/peringkat_topik.json", "w"), ensure_ascii=False, indent=1)
+json.dump(baris, open(os.path.join(BASE, "peringkat_topik.json"), "w"), ensure_ascii=False, indent=1)
 print("\ndisimpan: analisis/peringkat_topik.json")

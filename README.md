@@ -95,11 +95,11 @@ atau via Actions → workflow **Render YouTube Long-form 16:9**. Detail:
 
 ```bash
 python3 analisis/sapuan_besar.py     # tarik frasa autocomplete (butuh internet)
-python3 analisis/peringkat_topik.py  # hitung skor per topik
+python3 analisis/analisis_mendalam.py  # gabung + skor 54 topik + 9 niche
 ```
 
-Hasil terakhir: `analisis/HASIL_ANALISIS_TERBARU.md`
-(kandidat utama Ep27: "Kenapa Orang Ngorok?").
+Hasil terakhir: `analisis/HASIL_ANALISIS_TERBARU.md` (antrean Ep27-Ep36).
+Paket metadata siap pakai: `analisis/PAKET_METADATA.md`.
 
 ## Catatan kualitas
 

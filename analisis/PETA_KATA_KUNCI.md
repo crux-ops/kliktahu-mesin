@@ -1,9 +1,10 @@
 # Peta Kata Kunci KlikTahu - analisis real-time
 
-> **Versi terbaru & terbesar ada di [`HASIL_ANALISIS_TERBARU.md`](HASIL_ANALISIS_TERBARU.md)** - 977 frasa, skor 4 sinyal
-> (jumlah frasa, kekuatan frasa pendek, niat pencarian, kecocokan ceruk sains), lengkap dengan peringkat topik dan
-> rekomendasi episode. Dokumen di bawah ini adalah **tampilan per klaster** dari sapuan 587 frasa yang dijalankan
-> pada hari yang sama; keduanya saling melengkapi dan boleh dipakai bersama.
+> **Analisis terbaru (26 Sep 2026): [`HASIL_ANALISIS_TERBARU.md`](HASIL_ANALISIS_TERBARU.md)** -
+> 1.420 frasa gabungan, 54 topik, skor 6 sinyal, antrean Ep27-Ep36, plus paket metadata
+> siap pakai di [`PAKET_METADATA.md`](PAKET_METADATA.md). Antrean Ep27-Ep33 di bawah ini
+> **digantikan** oleh antrean baru. Dokumen ini dipertahankan sebagai **arsip tampilan
+> per klaster** dari sapuan 587 frasa (19 Sep 2026).
 
 **Metode:** Google Autocomplete (hl=id, gl=id) + YouTube Autocomplete (ds=yt) -> **54 seed** -> **703 saran** -> **587 frasa unik**.
 **Ditarik:** 19 September 2026. Data mentah: `analisis/peta_kata_kunci_2026-09-19.json`, hasil per klaster: `analisis/klaster_2026-09-19.json`.

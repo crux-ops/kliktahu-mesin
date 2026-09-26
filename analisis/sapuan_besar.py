@@ -103,7 +103,7 @@ def main():
         print(f"{r['skor']:7.1f} {r['frasa']:5d} {r['pendek']:6d} {r['niat']:5d}  {r['tema']:16s} "
               f"{' | '.join(r['contoh'])[:66]}")
     json.dump({"total": len(mentah), "frasa": sorted(mentah), "peringkat": baris},
-              open("/home/user/shorts/analisis/klaster_besar.json", "w"), ensure_ascii=False, indent=1)
+              open(os.path.join(BASE, "klaster_besar.json"), "w"), ensure_ascii=False, indent=1)
     print("\ndisimpan: analisis/klaster_besar.json")
 
 

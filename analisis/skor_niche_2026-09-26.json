@@ -1,0 +1,107 @@
+[
+ {
+  "niche": "teknologi",
+  "label": "Teknologi",
+  "topik_ct": 5,
+  "skor_rata": 49.1,
+  "skor_max": 63.5,
+  "top3": [
+   "internet",
+   "baterai",
+   "roket"
+  ]
+ },
+ {
+  "niche": "antariksa",
+  "label": "Luar angkasa",
+  "topik_ct": 8,
+  "skor_rata": 47.0,
+  "skor_max": 60.9,
+  "top3": [
+   "lubang_hitam",
+   "matahari",
+   "aurora"
+  ]
+ },
+ {
+  "niche": "laut",
+  "label": "Laut & misteri",
+  "topik_ct": 4,
+  "skor_rata": 44.4,
+  "skor_max": 58.9,
+  "top3": [
+   "palung",
+   "laut_asin",
+   "tsunami"
+  ]
+ },
+ {
+  "niche": "tubuh",
+  "label": "Tubuh manusia",
+  "topik_ct": 24,
+  "skor_rata": 40.8,
+  "skor_max": 61.4,
+  "top3": [
+   "ngorok",
+   "otak",
+   "demam"
+  ]
+ },
+ {
+  "niche": "bumi",
+  "label": "Bumi & cuaca",
+  "topik_ct": 7,
+  "skor_rata": 43.6,
+  "skor_max": 55.4,
+  "top3": [
+   "petir",
+   "hujan",
+   "gunung"
+  ]
+ },
+ {
+  "niche": "fisika",
+  "label": "Fisika dasar",
+  "topik_ct": 6,
+  "skor_rata": 39.4,
+  "skor_max": 53.8,
+  "top3": [
+   "kapal",
+   "pesawat",
+   "gravitasi"
+  ]
+ },
+ {
+  "niche": "purba",
+  "label": "Purba",
+  "topik_ct": 2,
+  "skor_rata": 43.6,
+  "skor_max": 48.4,
+  "top3": [
+   "megalodon"
+  ]
+ },
+ {
+  "niche": "misteri",
+  "label": "Sejarah & misteri",
+  "topik_ct": 2,
+  "skor_rata": 41.8,
+  "skor_max": 45.4,
+  "top3": [
+   "piramida",
+   "misteri_gunung"
+  ]
+ },
+ {
+  "niche": "hewan",
+  "label": "Hewan",
+  "topik_ct": 5,
+  "skor_rata": 31.6,
+  "skor_max": 45.5,
+  "top3": [
+   "anjing",
+   "burung",
+   "ayam"
+  ]
+ }
+]

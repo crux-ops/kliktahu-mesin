@@ -14,7 +14,9 @@ angka saja:
   4. PELUANG   -> klaster besar + niat jelas + belum banyak dibahas di YouTube ID
                   (dicerminkan oleh jumlah saran YouTube).
 """
-import json, sys, time, urllib.parse, urllib.request
+import json, os, sys, time, urllib.parse, urllib.request
+
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
@@ -123,7 +125,7 @@ def main():
         contoh = sorted(f for f in klaster[r["klaster"]])[:2]
         print(f"{r['skor']:6.2f} {r['klaster'][:38]:38s} {r['frasa']:6d}   {' | '.join(contoh)[:80]}")
     json.dump({"mentah": sorted(mentah), "klaster": {k: sorted(v) for k, v in klaster.items()}},
-              open("/home/user/shorts/analisis/klaster_terbaru.json", "w"), ensure_ascii=False, indent=1)
+              open(os.path.join(BASE, "klaster_terbaru.json"), "w"), ensure_ascii=False, indent=1)
     print("\nhasil mentah disimpan: analisis/klaster_terbaru.json")
 
 

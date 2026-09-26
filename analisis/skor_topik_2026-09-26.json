@@ -1,0 +1,4467 @@
+[
+ {
+  "id": "internet",
+  "label": "Kenapa Internet Lambat?",
+  "niche": "teknologi",
+  "covered": null,
+  "jml": 46,
+  "pendek": 30,
+  "gy": 7,
+  "y": 13,
+  "niat": 17,
+  "seeds": 3,
+  "bobot": 65.0,
+  "prov": 33,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 1,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "bagaimana cara kerja wifi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa internet lambat",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp hilang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp hilang timbul",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp hilang terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp sering hilang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp samsung hilang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara kerja router wifi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa internet lambat hari ini",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja wifi portable",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja wifi voucher",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja wifi extender",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 8.04,
+  "CERUK": 3.33,
+  "NIAT10": 10.0,
+  "LINTAS": 2.12,
+  "TONTON": 3.94,
+  "skor": 63.5
+ },
+ {
+  "id": "ngorok",
+  "label": "Kenapa Orang Ngorok?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 34,
+  "pendek": 34,
+  "gy": 2,
+  "y": 10,
+  "niat": 2,
+  "seeds": 1,
+  "bobot": 65.5,
+  "prov": 18,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa ngorok",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa ngorok bisa terjadi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa ngorok berbahaya",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa ayam ngorok",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa tidur ngorok",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa orang ngorok",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing ngorok",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa orang ngorok keras",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa tidur ngorok kenceng",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa ngorok besar",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa ngorok terus",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa ngorok padahal mulut tertutup",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 7.09,
+  "CERUK": 8.67,
+  "NIAT10": 1.18,
+  "LINTAS": 1.11,
+  "TONTON": 5.56,
+  "skor": 61.4
+ },
+ {
+  "id": "bulan",
+  "label": "bulan (SUDAH: Ep24)",
+  "niche": "antariksa",
+  "covered": "Ep24",
+  "jml": 49,
+  "pendek": 34,
+  "gy": 3,
+  "y": 10,
+  "niat": 6,
+  "seeds": 3,
+  "bobot": 38.0,
+  "prov": 19,
+  "sekolah": 0,
+  "islam": 1,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 1,
+  "top_frasa": [
+   {
+    "f": "kenapa bulan merah",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa bulan berwarna merah",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa gerhana bulan merah",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa bulan merah sekarang",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa bulan bisa merah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bulan menjadi merah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa ada bulan merah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bulan warnanya merah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bulan bercahaya",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa bulan merah hari ini",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa bulan merah malam ini",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa bulan bisa warna merah",
+    "G": false,
+    "Y": true
+   }
+  ],
+  "VOL": 8.76,
+  "CERUK": 9.0,
+  "NIAT10": 3.53,
+  "LINTAS": 1.58,
+  "TONTON": 5.26,
+  "skor": 60.9
+ },
+ {
+  "id": "mimpi",
+  "label": "mimpi (SUDAH: Ep21, Ep25)",
+  "niche": "tubuh",
+  "covered": "Ep21, Ep25",
+  "jml": 54,
+  "pendek": 41,
+  "gy": 6,
+  "y": 19,
+  "niat": 2,
+  "seeds": 3,
+  "bobot": 103.6,
+  "prov": 37,
+  "sekolah": 0,
+  "islam": 2,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa mimpi ular",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu mimpi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mimpi orang meninggal",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mimpi buruk terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mimpi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu mimpi dalam mimpi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mimpi orang yang sudah meninggal",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mimpi buruk",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa mimpi terasa nyata",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "mimpi manis",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa mimpi hamil",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa mimpi mantan",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 10.0,
+  "CERUK": 8.67,
+  "NIAT10": 1.18,
+  "LINTAS": 1.62,
+  "TONTON": 5.14,
+  "skor": 60.2
+ },
+ {
+  "id": "palung",
+  "label": "Sedalam Apa Palung Mariana?",
+  "niche": "laut",
+  "covered": null,
+  "jml": 17,
+  "pendek": 16,
+  "gy": 5,
+  "y": 12,
+  "niat": 4,
+  "seeds": 2,
+  "bobot": 41.5,
+  "prov": 17,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "berapa dalam palung mariana",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri laut dalam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri makhluk laut dalam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri kehidupan laut dalam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kisah misteri laut dalam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "berapa kedalaman palung mariana",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri laut dalam islam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri hewan laut dalam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri di laut dalam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "berapa meter dalam palung mariana",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa km dalam palung mariana",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "misteri laut dalam al quran",
+    "G": false,
+    "Y": true
+   }
+  ],
+  "VOL": 3.45,
+  "CERUK": 10.0,
+  "NIAT10": 2.35,
+  "LINTAS": 2.94,
+  "TONTON": 7.06,
+  "skor": 58.9
+ },
+ {
+  "id": "baterai",
+  "label": "Kenapa Baterai HP Cepat Habis?",
+  "niche": "teknologi",
+  "covered": null,
+  "jml": 36,
+  "pendek": 9,
+  "gy": 3,
+  "y": 10,
+  "niat": 14,
+  "seeds": 1,
+  "bobot": 35.3,
+  "prov": 17,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa baterai hp cepat habis",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa baterai hp cepat habis samsung",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa baterai hp cepat habis dan panas",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa baterai hp cepat habis padahal tidak dipakai",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa baterai hp cepat habis padahal baru beli",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa baterai cepat habis",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa baterai hp cepat habis redmi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa baterai cepat habis iphone",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa baterai cepat habis samsung",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa baterai infinix cepat habis",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa baterai iphone cepat habis",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa baterai laptop cepat habis",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 4.88,
+  "CERUK": 5.33,
+  "NIAT10": 8.24,
+  "LINTAS": 1.76,
+  "TONTON": 5.88,
+  "skor": 58.0
+ },
+ {
+  "id": "lubang_hitam",
+  "label": "Apa Itu Lubang Hitam?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 27,
+  "pendek": 18,
+  "gy": 6,
+  "y": 13,
+  "niat": 0,
+  "seeds": 2,
+  "bobot": 55.4,
+  "prov": 27,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu lubang hitam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu black hole",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu black hole sebenarnya",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu black hole tsunami",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa black hole",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu lubang hitam di luar angkasa",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu black hole di luar angkasa",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa isi lubang hitam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa isi black hole",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa dalam black hole",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa arti black hole",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa suara black hole",
+    "G": false,
+    "Y": true
+   }
+  ],
+  "VOL": 4.76,
+  "CERUK": 10.0,
+  "NIAT10": 0.0,
+  "LINTAS": 2.22,
+  "TONTON": 4.81,
+  "skor": 56.3
+ },
+ {
+  "id": "petir",
+  "label": "Kenapa Petir Menyambar?",
+  "niche": "bumi",
+  "covered": null,
+  "jml": 18,
+  "pendek": 15,
+  "gy": 5,
+  "y": 10,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 65.4,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 1,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa petir bersuara",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir bisa terjadi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir menyambar pohon",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir bisa menyambar",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir bisa menyambar manusia",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir menyambar",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir bisa berbunyi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir bisa menyambar hp",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir menyambar pohon kelapa",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa petir suaranya keras",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan ada petir",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 3.46,
+  "CERUK": 10.0,
+  "NIAT10": 0.0,
+  "LINTAS": 3.33,
+  "TONTON": 6.67,
+  "skor": 55.4
+ },
+ {
+  "id": "otak",
+  "label": "Bagaimana Cara Kerja Otak?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 11,
+  "pendek": 5,
+  "gy": 2,
+  "y": 3,
+  "niat": 11,
+  "seeds": 1,
+  "bobot": 20.2,
+  "prov": 11,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "bagaimana cara kerja otak",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara kerja otak manusia",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara otak bekerja",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara kerja otak kanan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak kiri",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak kiri dan kanan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak terhadap gerak yang dilakukan tubuh kalian",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak yang anda ketahui",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak untuk mengendalikan gerakan gerakan pernapasan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak dalam mempengaruhi perilaku manusia",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana cara kerja otak dalam mengingat sesuatu",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 1.71,
+  "CERUK": 10.0,
+  "NIAT10": 6.47,
+  "LINTAS": 1.82,
+  "TONTON": 2.73,
+  "skor": 54.4
+ },
+ {
+  "id": "matahari",
+  "label": "Seberapa Besar & Panas Matahari?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 13,
+  "pendek": 9,
+  "gy": 1,
+  "y": 1,
+  "niat": 12,
+  "seeds": 2,
+  "bobot": 16.3,
+  "prov": 11,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "berapa besar matahari",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "berapa besar ukuran matahari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar gravitasi matahari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar massa matahari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar matahari dibanding bumi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar matahari dari bumi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar matahari berbanding bumi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar matahari buatan china",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi matahari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa kali besar matahari dari bumi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa besar peran matahari di bumi dan sistem tata surya",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa gerhana matahari tidak boleh dilihat secara langsung",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 2.32,
+  "CERUK": 10.0,
+  "NIAT10": 7.06,
+  "LINTAS": 0.91,
+  "TONTON": 0.91,
+  "skor": 54.4
+ },
+ {
+  "id": "kapal",
+  "label": "Kenapa Kapal Besi Tidak Tenggelam?",
+  "niche": "fisika",
+  "covered": null,
+  "jml": 14,
+  "pendek": 10,
+  "gy": 4,
+  "y": 8,
+  "niat": 3,
+  "seeds": 1,
+  "bobot": 31.3,
+  "prov": 14,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa kapal tidak tenggelam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal besar tidak tenggelam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal selam tidak tenggelam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal tidak tenggelam padahal terbuat dari besi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal titanic tenggelam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal laut tidak tenggelam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal induk tidak tenggelam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal tidak bisa tenggelam",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kapal tidak tenggelam padahal berat",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa kapal pesiar tidak tenggelam",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa kapal besi tidak tenggelam",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa kapal feri tidak tenggelam",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.53,
+  "CERUK": 10.0,
+  "NIAT10": 1.76,
+  "LINTAS": 2.86,
+  "TONTON": 5.71,
+  "skor": 53.8
+ },
+ {
+  "id": "demam",
+  "label": "Kenapa Demam Naik Turun?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 19,
+  "pendek": 13,
+  "gy": 5,
+  "y": 10,
+  "niat": 2,
+  "seeds": 1,
+  "bobot": 65.6,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa demam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam naik turun",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam bisa terjadi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam anak naik turun",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam anak tidak turun",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam menggigil",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam hilang timbul",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam tidak sembuh2",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam tidak turun",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa demam malam saja",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa demam tidak boleh pakai selimut",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa cowok demam manja",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 3.38,
+  "CERUK": 8.67,
+  "NIAT10": 1.18,
+  "LINTAS": 3.33,
+  "TONTON": 6.67,
+  "skor": 53.6
+ },
+ {
+  "id": "mata",
+  "label": "Kenapa Mata Berkedip?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 32,
+  "pendek": 25,
+  "gy": 4,
+  "y": 10,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 35.3,
+  "prov": 16,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa mata berkedip",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata berkedip terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata berkedip sebelah kanan",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata berkedip sebelah kiri",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata kanan berkedip",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata harus berkedip",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata gatal",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa mata kuning",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa mata merah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa mata kiri berkedip sendiri",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata sering berkedip kedip",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa mata saat berkedip sakit",
+    "G": false,
+    "Y": true
+   }
+  ],
+  "VOL": 5.99,
+  "CERUK": 6.67,
+  "NIAT10": 0.0,
+  "LINTAS": 2.5,
+  "TONTON": 6.25,
+  "skor": 53.4
+ },
+ {
+  "id": "uban",
+  "label": "Kenapa Uban Tidak Boleh Dicabut?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 24,
+  "pendek": 15,
+  "gy": 6,
+  "y": 11,
+  "niat": 1,
+  "seeds": 2,
+  "bobot": 76.0,
+  "prov": 21,
+  "sekolah": 0,
+  "islam": 1,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa rambut memutih",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban bikin gatal",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban bisa tumbuh",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban cepat tumbuh",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban tidak boleh dicabut",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban gatal",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban tidak boleh dicabut menurut islam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban terasa gatal",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban itu gatal",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa uban semakin banyak",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa uban sangat gatal",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa ujung rambut memutih",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 4.13,
+  "CERUK": 8.67,
+  "NIAT10": 0.59,
+  "LINTAS": 2.86,
+  "TONTON": 5.24,
+  "skor": 53.0
+ },
+ {
+  "id": "cegukan",
+  "label": "Kenapa Cegukan Tidak Berhenti?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 20,
+  "pendek": 17,
+  "gy": 5,
+  "y": 10,
+  "niat": 5,
+  "seeds": 1,
+  "bobot": 65.3,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa cegukan",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan terus menerus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan bisa terjadi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan tiba tiba",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan terjadi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bayi cegukan",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa janin cegukan",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan tidak berhenti berhenti",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa cegukan tidak berhenti",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa bisa cegukan tiba tiba",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing cegukan",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 3.88,
+  "CERUK": 6.67,
+  "NIAT10": 2.94,
+  "LINTAS": 3.33,
+  "TONTON": 6.67,
+  "skor": 52.7
+ },
+ {
+  "id": "pesawat",
+  "label": "Kenapa Pesawat Berat Bisa Terbang?",
+  "niche": "fisika",
+  "covered": null,
+  "jml": 16,
+  "pendek": 6,
+  "gy": 2,
+  "y": 7,
+  "niat": 4,
+  "seeds": 1,
+  "bobot": 29.2,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 1,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa pesawat bisa terbang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa pesawat bisa terbang padahal berat",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "pesawat",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa pesawat berat bisa terbang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "penjelasan kenapa pesawat bisa terbang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa pesawat kertas bisa terbang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa pesawat mainan tidak bisa terbang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa pesawat bisa terbang mundur",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa pesawat bisa terbang padahal terbuat dari besi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa pesawat bisa terbang padahal ada gravitasi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa pesawat bisa terbang padahal beratnya ratusan ton",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa pesawat tidak bisa terbang di atas ka'bah",
+    "G": false,
+    "Y": true
+   }
+  ],
+  "VOL": 2.36,
+  "CERUK": 10.0,
+  "NIAT10": 2.35,
+  "LINTAS": 1.33,
+  "TONTON": 4.67,
+  "skor": 51.6
+ },
+ {
+  "id": "laut_asin",
+  "label": "Kenapa Air Laut Asin?",
+  "niche": "laut",
+  "covered": null,
+  "jml": 23,
+  "pendek": 10,
+  "gy": 3,
+  "y": 8,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 57.9,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 1,
+  "hibur": 5,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa laut asin",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa air laut asing",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa air laut asin menurut islam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa air laut asin",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa air laut menjadi asin",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kisah kenapa air laut asin",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa air laut asin abu nawas",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa air laut asin gombal",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa air laut asin tebakan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa air laut asin jokes",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa air laut asin secara ilmiah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air laut asin jawaban abu nawas",
+    "G": false,
+    "Y": true
+   }
+  ],
+  "VOL": 3.53,
+  "CERUK": 8.67,
+  "NIAT10": 0.59,
+  "LINTAS": 2.0,
+  "TONTON": 5.33,
+  "skor": 50.5
+ },
+ {
+  "id": "telinga",
+  "label": "Kenapa Telinga Berdenging?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 30,
+  "pendek": 21,
+  "gy": 3,
+  "y": 10,
+  "niat": 3,
+  "seeds": 1,
+  "bobot": 35.4,
+  "prov": 17,
+  "sekolah": 0,
+  "islam": 10,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa telinga berdenging",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa telinga berdenging sebelah kiri",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa telinga berdenging menurut islam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa telinga kiri berdenging",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa telinga kanan berdenging",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa telinga sering berdenging",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa telinga bisa berdenging",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kuping berdenging",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa telinga berdenging terus menerus",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa telinga kanan berdenging terus",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kuping berdenging terus menerus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa telinga berdenging terus",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 5.38,
+  "CERUK": 5.33,
+  "NIAT10": 1.76,
+  "LINTAS": 1.76,
+  "TONTON": 5.88,
+  "skor": 49.8
+ },
+ {
+  "id": "jantung",
+  "label": "Kenapa Jantung Berdebar?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 18,
+  "pendek": 12,
+  "gy": 0,
+  "y": 0,
+  "niat": 2,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa jantung berdebar",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar-debar",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar kencang tiba-tiba",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar debar",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar kencang",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar terus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa habis makan jantung berdebar",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar kencang terus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar tanpa sebab",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar tiba tiba",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa ketika sholat jantung berdebar",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa minum kopi jantung berdebar",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 3.17,
+  "CERUK": 8.67,
+  "NIAT10": 1.18,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 49.6
+ },
+ {
+  "id": "megalodon",
+  "label": "Megalodon: Benarkah Masih Hidup?",
+  "niche": "purba",
+  "covered": null,
+  "jml": 12,
+  "pendek": 12,
+  "gy": 3,
+  "y": 9,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 51.0,
+  "prov": 12,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "megalodon",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "megalodon film",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "megalodon vs mosasaurus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "megalodonvt",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "megalodon megalodon",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "megalodon manusia",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "megalodon indonesia",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "megalodon sudah punah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "megalodon melawan hiu",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "megalodon artinya",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "megalodon adalah",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "megalodon hidup di zaman apa",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.5,
+  "CERUK": 8.0,
+  "NIAT10": 0.59,
+  "LINTAS": 2.5,
+  "TONTON": 7.5,
+  "skor": 48.4
+ },
+ {
+  "id": "aurora",
+  "label": "Aurora: Kenapa Langit Bisa Menyala?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 13,
+  "pendek": 10,
+  "gy": 2,
+  "y": 5,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 47.3,
+  "prov": 13,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu aurora",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu aurora borealis",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu aurora langit",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu fenomena aurora",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu aurora store",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu aurora australis",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu aurora di finlandia",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu aurora di langit",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu aurora dalam geografi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu aurora di norway",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu aurora sky di blox fruit",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu aurora di kutub utara",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.42,
+  "CERUK": 10.0,
+  "NIAT10": 0.0,
+  "LINTAS": 1.54,
+  "TONTON": 3.85,
+  "skor": 47.6
+ },
+ {
+  "id": "gerhana",
+  "label": "Kenapa Terjadi Gerhana?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 7,
+  "pendek": 5,
+  "gy": 1,
+  "y": 3,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 8.7,
+  "prov": 4,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 1,
+  "top_frasa": [
+   {
+    "f": "kenapa gerhana bulan merah",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa terjadi gerhana bulan merah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bisa gerhana bulan merah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bulan merah saat gerhana",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa gerhana bulan berwarna merah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gerhana matahari tidak boleh dilihat secara langsung",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa bulan berwarna merah saat gerhana",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 1.27,
+  "CERUK": 9.0,
+  "NIAT10": 0.59,
+  "LINTAS": 2.5,
+  "TONTON": 7.5,
+  "skor": 47.2
+ },
+ {
+  "id": "hujan",
+  "label": "Kenapa Hujan Bikin Sakit (dan Ada Petir)?",
+  "niche": "bumi",
+  "covered": null,
+  "jml": 26,
+  "pendek": 22,
+  "gy": 0,
+  "y": 0,
+  "niat": 3,
+  "seeds": 3,
+  "bobot": 8.4,
+  "prov": 7,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 1,
+  "top_frasa": [
+   {
+    "f": "kenapa hujan",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan hari ini",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan tidak berhenti",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan es",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan mulu",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan panas",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan terus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan turun",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan terus hari ini",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "bagaimana awan hujan terbentuk",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan ada petir",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa hujan bikin sakit",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 5.04,
+  "CERUK": 7.67,
+  "NIAT10": 1.76,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 46.9
+ },
+ {
+  "id": "roket",
+  "label": "Bagaimana Roket Mendarat?",
+  "niche": "teknologi",
+  "covered": null,
+  "jml": 4,
+  "pendek": 4,
+  "gy": 1,
+  "y": 2,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 9.4,
+  "prov": 4,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "bagaimana roket mendarat ke bumi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara roket mendarat",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana roket mendarat",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana roket mendarat di bulan",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.83,
+  "CERUK": 10.0,
+  "NIAT10": 0.59,
+  "LINTAS": 2.5,
+  "TONTON": 5.0,
+  "skor": 45.9
+ },
+ {
+  "id": "gigi",
+  "label": "Kenapa Gigi Berlubang?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 20,
+  "pendek": 16,
+  "gy": 0,
+  "y": 0,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa gigi berlubang",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang bau",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang berdarah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang hitam",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang ngilu",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang sakit",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang sakit terus menerus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang bau busuk",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang bisa sakit",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang keluar darah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang nyut nyutan",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang sakit sekali",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 3.78,
+  "CERUK": 6.67,
+  "NIAT10": 0.59,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 45.6
+ },
+ {
+  "id": "kucing",
+  "label": "kucing (SUDAH: Ep23)",
+  "niche": "hewan",
+  "covered": "Ep23",
+  "jml": 35,
+  "pendek": 26,
+  "gy": 3,
+  "y": 11,
+  "niat": 2,
+  "seeds": 2,
+  "bobot": 39.1,
+  "prov": 18,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 1,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa kucing mengeong",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing mengeong terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing mengeong keras",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing ngorok",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kucing",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kucing berantem",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kucing joget",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kucing lucu",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa kucing jarang mengeong",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing tidak mengeong",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa kucing cegukan",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kucing meong meong",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 6.43,
+  "CERUK": 6.67,
+  "NIAT10": 1.18,
+  "LINTAS": 1.67,
+  "TONTON": 6.11,
+  "skor": 45.5
+ },
+ {
+  "id": "gunung",
+  "label": "Kenapa Gunung Meletus?",
+  "niche": "bumi",
+  "covered": null,
+  "jml": 10,
+  "pendek": 10,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 1,
+  "top_frasa": [
+   {
+    "f": "kenapa gunung meletus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung berapi meletus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung meletus terjadi",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa terjadinya gunung meletus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa bisa terjadi gunung meletus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung meletus ada petir",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung meletus bisa terjadi",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung meletus bukan bencana",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung meletus keluar petir",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gunung berapi bisa meletus",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 2.09,
+  "CERUK": 9.0,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 45.4
+ },
+ {
+  "id": "piramida",
+  "label": "Bagaimana Piramida Dibangun?",
+  "niche": "misteri",
+  "covered": null,
+  "jml": 13,
+  "pendek": 9,
+  "gy": 4,
+  "y": 7,
+  "niat": 0,
+  "seeds": 3,
+  "bobot": 30.9,
+  "prov": 13,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 3,
+  "sains": 2,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "misteri piramida mesir",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa menara pisa miring",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri pembangunan piramida mesir",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa menara pisa miring tapi tidak roboh",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "penjelasan alquran tentang piramida",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri piramida giza mesir",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri piramida giza di mesir",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri di balik piramida mesir",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa menara pisa miring gombal",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa menara pisa miring jokes",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa menara pisa miring teka teki",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kamu tahu kenapa menara pisa miring",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.32,
+  "CERUK": 8.0,
+  "NIAT10": 0.0,
+  "LINTAS": 3.08,
+  "TONTON": 5.38,
+  "skor": 45.4
+ },
+ {
+  "id": "gravitasi",
+  "label": "Apa Itu Gravitasi?",
+  "niche": "fisika",
+  "covered": null,
+  "jml": 13,
+  "pendek": 12,
+  "gy": 2,
+  "y": 3,
+  "niat": 2,
+  "seeds": 3,
+  "bobot": 22.3,
+  "prov": 13,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu gravitasi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu gravitasi bumi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "berapa besar gravitasi matahari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gaya gravitasi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu gravitasi 7g",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi bulan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi newton",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi universal",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi matahari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi kuantum",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi dalam korupsi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu gravitasi menurut einstein",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.62,
+  "CERUK": 8.67,
+  "NIAT10": 1.18,
+  "LINTAS": 1.54,
+  "TONTON": 2.31,
+  "skor": 45.1
+ },
+ {
+  "id": "bintang",
+  "label": "Seberapa Banyak Bintang di Langit?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 6,
+  "pendek": 3,
+  "gy": 3,
+  "y": 3,
+  "niat": 6,
+  "seeds": 1,
+  "bobot": 15.4,
+  "prov": 6,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "berapa jumlah bintang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "berapa jumlah bintang di langit",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "berapa jumlah bintang di galaksi bima sakti",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "berapa jumlah bintang di dunia",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa jumlah bintang di alam semesta",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "berapa jumlah bintang di luar angkasa",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.96,
+  "CERUK": 6.67,
+  "NIAT10": 3.53,
+  "LINTAS": 5.0,
+  "TONTON": 5.0,
+  "skor": 44.8
+ },
+ {
+  "id": "gempa",
+  "label": "gempa (SUDAH: Ep22)",
+  "niche": "bumi",
+  "covered": "Ep22",
+  "jml": 34,
+  "pendek": 29,
+  "gy": 2,
+  "y": 5,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 24.8,
+  "prov": 13,
+  "sekolah": 1,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 2,
+  "top_frasa": [
+   {
+    "f": "bagaimana gempa terjadi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana gempa bisa terjadi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana terjadinya gempa",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa gempa",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "bagaimana gempa bumi terjadi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa bisa gempa",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gempa bumi",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gempa terjadi",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gempa terus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "bagaimana gempa bumi bisa terjadi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana terjadinya gempa bumi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana terjadinya gempa tektonik",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 6.61,
+  "CERUK": 7.5,
+  "NIAT10": 0.0,
+  "LINTAS": 1.54,
+  "TONTON": 3.85,
+  "skor": 44.0
+ },
+ {
+  "id": "pelangi",
+  "label": "Bagaimana Pelangi Terbentuk?",
+  "niche": "bumi",
+  "covered": null,
+  "jml": 13,
+  "pendek": 9,
+  "gy": 1,
+  "y": 4,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 22.5,
+  "prov": 13,
+  "sekolah": 3,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "bagaimana pelangi terbentuk",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara terbentuknya pelangi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana terbentuknya pelangi",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana pelangi bisa terbentuk",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana pelangi terbentuk jelaskan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk kelas 5",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk tahun 4",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk setelah hujan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk di langit",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk ips kelas 5",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk sehingga menunjukkan penguraian cahaya",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana pelangi terbentuk setelah hujan dan matahari bersinar kembali",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.32,
+  "CERUK": 8.0,
+  "NIAT10": 0.59,
+  "LINTAS": 0.77,
+  "TONTON": 3.08,
+  "skor": 41.7
+ },
+ {
+  "id": "luka",
+  "label": "Kenapa Luka Bisa Sembuh (dan Gatal)?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 6,
+  "pendek": 4,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa luka",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa luka bernanah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa luka gatal",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa luka terasa gatal",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa luka kalau mau sembuh gatal",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa luka susah sembuh dan bernanah",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 1.06,
+  "CERUK": 8.67,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 41.5
+ },
+ {
+  "id": "perut",
+  "label": "Kenapa Perut Bunyi?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 14,
+  "pendek": 7,
+  "gy": 4,
+  "y": 7,
+  "niat": 3,
+  "seeds": 1,
+  "bobot": 29.2,
+  "prov": 13,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa perut bunyi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi padahal sudah makan",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi krucuk krucuk",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi saat lapar",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi kayak kentut",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi saat diare",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi terus",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa perut bunyi krucuk krucuk padahal sudah makan",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa perut bunyi padahal tidak lapar",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa perut bunyi seperti kentut",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa perut bunyi tapi tidak lapar",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa perut bunyi terus dan mencret",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.24,
+  "CERUK": 5.33,
+  "NIAT10": 1.76,
+  "LINTAS": 3.08,
+  "TONTON": 5.38,
+  "skor": 41.2
+ },
+ {
+  "id": "hp_panas",
+  "label": "Kenapa HP Cepat Panas?",
+  "niche": "teknologi",
+  "covered": null,
+  "jml": 20,
+  "pendek": 13,
+  "gy": 5,
+  "y": 10,
+  "niat": 2,
+  "seeds": 1,
+  "bobot": 35.4,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 1,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa sinyal hp hilang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp hilang timbul",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp hilang terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp sering hilang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp samsung hilang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp suka hilang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal di hp hilang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp redmi hilang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp xiaomi hilang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa ponsel cepat panas",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa sinyal hp samsung sering hilang",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa sinyal hp lemot padahal 4g",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 3.49,
+  "CERUK": 3.33,
+  "NIAT10": 1.18,
+  "LINTAS": 3.33,
+  "TONTON": 6.67,
+  "skor": 40.6
+ },
+ {
+  "id": "darah",
+  "label": "Kenapa Darah Berwarna Merah?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 4,
+  "pendek": 2,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa gigi berlubang berdarah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang keluar darah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa buang air besar keluar darah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa gigi berlubang keluar darah kental",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.64,
+  "CERUK": 8.67,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 40.2
+ },
+ {
+  "id": "anjing",
+  "label": "Kenapa Anjing Menggonggong Tengah Malam?",
+  "niche": "hewan",
+  "covered": null,
+  "jml": 12,
+  "pendek": 6,
+  "gy": 5,
+  "y": 7,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 29.2,
+  "prov": 12,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa anjing menggonggong",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing menggonggong terus",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing menggonggong saat adzan",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing menggonggong tengah malam",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing menggonggong di malam hari",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing tidak mau menggonggong",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing menggonggong pada malam hari",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa anjing menggonggong seperti serigala",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa anjing menggonggong saat melihat kita",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa anjing menggonggong saat adzan subuh",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa anjing menggonggong jam 3 pagi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa anjing menggonggong di depan rumah",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 1.92,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 4.17,
+  "TONTON": 5.83,
+  "skor": 39.1
+ },
+ {
+  "id": "listrik",
+  "label": "Dari Mana Listrik Berasal?",
+  "niche": "fisika",
+  "covered": null,
+  "jml": 1,
+  "pendek": 1,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa genset tidak keluar listrik",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.21,
+  "CERUK": 8.67,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 39.0
+ },
+ {
+  "id": "dinosaurus",
+  "label": "dinosaurus (SUDAH: Ep26)",
+  "niche": "purba",
+  "covered": "Ep26",
+  "jml": 18,
+  "pendek": 13,
+  "gy": 2,
+  "y": 4,
+  "niat": 0,
+  "seeds": 2,
+  "bobot": 26.9,
+  "prov": 15,
+  "sekolah": 0,
+  "islam": 1,
+  "hibur": 2,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa dinosaurus punah",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa dinosaurus tidak ada di indonesia",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "dinosaurus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa dinosaurus harus punah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa dinosaurus bisa punah",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa dinosaurus musnah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa dinosaurus punah jokes",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa dinosaurus punah lucu",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "alasan kenapa dinosaurus punah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa dinosaurus punah menurut islam",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa dinosaurus punah tebak tebakan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "dinosaurus tidak ada di indonesia",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 3.27,
+  "CERUK": 10.0,
+  "NIAT10": 0.0,
+  "LINTAS": 1.33,
+  "TONTON": 2.67,
+  "skor": 38.8
+ },
+ {
+  "id": "awan",
+  "label": "Kenapa Awan Tidak Jatuh?",
+  "niche": "bumi",
+  "covered": null,
+  "jml": 14,
+  "pendek": 10,
+  "gy": 1,
+  "y": 3,
+  "niat": 1,
+  "seeds": 2,
+  "bobot": 22.9,
+  "prov": 13,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "bagaimana awan terbentuk",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "bagaimana cara awan terbentuk",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana awan bisa terbentuk",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana awan panas terbentuk",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "bagaimana terbentuknya awan cumulonimbus",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana terbentuknya awan arcus",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana proses awan terbentuk",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana awan hitam terbentuk",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana awan hujan terbentuk",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bulan madu di awan biru",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa langit biru dan awan putih",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "bagaimana awan terbentuk dalam siklus air",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.53,
+  "CERUK": 6.67,
+  "NIAT10": 0.59,
+  "LINTAS": 0.77,
+  "TONTON": 2.31,
+  "skor": 38.2
+ },
+ {
+  "id": "misteri_gunung",
+  "label": "Misteri Gunung Nusantara (Padang/Lawu/Merapi)",
+  "niche": "misteri",
+  "covered": null,
+  "jml": 13,
+  "pendek": 13,
+  "gy": 4,
+  "y": 6,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 50.4,
+  "prov": 12,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 1,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "misteri gunung merapi",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri gunung lawu",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri gunung gede",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri gunung padang",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "misteri gunung",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri gunung slamet",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "misteri gunung kawi",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "misteri gunung welirang",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "misteri gunung salak",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "misteri gunung tidar",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "misteri gunung ciremai",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "misteri gunung merapi 3",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.71,
+  "CERUK": 4.67,
+  "NIAT10": 0.0,
+  "LINTAS": 3.33,
+  "TONTON": 5.0,
+  "skor": 38.1
+ },
+ {
+  "id": "ai",
+  "label": "Apa Itu Kecerdasan Buatan (AI)?",
+  "niche": "teknologi",
+  "covered": null,
+  "jml": 13,
+  "pendek": 8,
+  "gy": 1,
+  "y": 3,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 20.1,
+  "prov": 12,
+  "sekolah": 2,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu kecerdasan buatan",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa asas kecerdasan buatan",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu kecerdasan ai",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu kecerdasan buatan ai",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu kecerdasan buatan al",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "jelaskan apa itu kecerdasan buatan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu jurusan kecerdasan buatan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu fenomena kecerdasan buatan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu kecerdasan buatan ai dan bagaimana cara kerjanya",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu kecerdasan buatan ai jelaskan",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu kecerdasan buatan dan contohnya",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa gemini ai tidak bisa digunakan",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 2.22,
+  "CERUK": 6.67,
+  "NIAT10": 0.59,
+  "LINTAS": 0.83,
+  "TONTON": 2.5,
+  "skor": 37.6
+ },
+ {
+  "id": "es_mengapung",
+  "label": "Kenapa Es Mengapung?",
+  "niche": "fisika",
+  "covered": null,
+  "jml": 7,
+  "pendek": 4,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa es mengapung",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa es batu mengapung",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa es mengapung atau tenggelam",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa es mengapung di air",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa es batu mengapung di air",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa es mengapung dan batu tenggelam",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa es mengapung di permukaan air",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 1.17,
+  "CERUK": 6.67,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 36.8
+ },
+ {
+  "id": "tidur",
+  "label": "Kenapa Kita Butuh Tidur?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 3,
+  "pendek": 2,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa orang susah tidur",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia menguap saat mengantuk",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa jantung berdebar kencang saat tidur",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.53,
+  "CERUK": 7.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 36.6
+ },
+ {
+  "id": "menguap",
+  "label": "Kenapa Kita Menguap (dan Menular)?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 9,
+  "pendek": 7,
+  "gy": 0,
+  "y": 0,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa manusia menguap",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia menguap terus menerus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia bisa menguap",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia harus menguap",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia menguap terus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia sering menguap",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia menguap saat mengantuk",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa manusia menguap keluar air mata",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa setan tertawa saat manusia menguap",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 1.68,
+  "CERUK": 5.33,
+  "NIAT10": 0.59,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 35.9
+ },
+ {
+  "id": "tsunami",
+  "label": "Kenapa Terjadi Tsunami?",
+  "niche": "laut",
+  "covered": null,
+  "jml": 1,
+  "pendek": 0,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 2,
+  "top_frasa": [
+   {
+    "f": "kenapa gempa bumi bisa menyebabkan tsunami",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.11,
+  "CERUK": 7.5,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 35.7
+ },
+ {
+  "id": "kencing",
+  "label": "Kenapa Air Kencing Berwarna Kuning?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 8,
+  "pendek": 6,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa kencing terus",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa kencing berbusa",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air kencing bau",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air kencing berbusa",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air kencing berwarna kuning",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air kencing berwarna merah",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air kencing berwarna kuning kemerahan",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa air kencing berwarna kuning pekat",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 1.47,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 34.4
+ },
+ {
+  "id": "jari_keriput",
+  "label": "Kenapa Jari Keriput Kena Air?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 11,
+  "pendek": 6,
+  "gy": 1,
+  "y": 2,
+  "niat": 3,
+  "seeds": 1,
+  "bobot": 17.8,
+  "prov": 11,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa jari tangan keriput",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "kenapa jari bisa keriput",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "kenapa jari keriput",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari kaki keriput",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa ujung jari keriput",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari keriput kena air",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari keriput padahal tidak terkena air",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari tangan keriput padahal tidak terkena air",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari tangan keriput padahal masih muda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari keriput saat kena air",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa jari tangan keriput dan kering",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 1.81,
+  "CERUK": 5.33,
+  "NIAT10": 1.76,
+  "LINTAS": 0.91,
+  "TONTON": 1.82,
+  "skor": 34.1
+ },
+ {
+  "id": "lutut",
+  "label": "Kenapa Lutut Bunyi Krek?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 7,
+  "pendek": 6,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa lutut sakit",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa lutut terasa ngilu",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa lutut terasa nyeri",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa lutut bunyi krek krek",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa lutut sakit saat ditekuk",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa lutut tiba tiba sakit",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa lutut sakit saat ditekuk dan diluruskan",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 1.36,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 34.1
+ },
+ {
+  "id": "langit_biru",
+  "label": "Kenapa Langit Biru?",
+  "niche": "bumi",
+  "covered": null,
+  "jml": 7,
+  "pendek": 2,
+  "gy": 1,
+  "y": 1,
+  "niat": 1,
+  "seeds": 1,
+  "bobot": 23.9,
+  "prov": 7,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa langit biru",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "google kenapa langit biru",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa langit biru padahal luar angkasa gelap",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa langit biru pada siang hari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa langit biru dan awan putih",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa langit biru di siang hari",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "kenapa langit biru tapi luar angkasa hitam",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.97,
+  "CERUK": 6.67,
+  "NIAT10": 0.59,
+  "LINTAS": 1.43,
+  "TONTON": 1.43,
+  "skor": 33.3
+ },
+ {
+  "id": "meteor",
+  "label": "Kenapa Ada Hujan Meteor?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 1,
+  "pendek": 1,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 1.2,
+  "prov": 1,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 1,
+  "top_frasa": [
+   {
+    "f": "kenapa dinosaurus punah karena meteor",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.21,
+  "CERUK": 9.0,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 33.1
+ },
+ {
+  "id": "burung",
+  "label": "Kenapa Burung Bisa Terbang?",
+  "niche": "hewan",
+  "covered": null,
+  "jml": 2,
+  "pendek": 1,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 1.1,
+  "prov": 1,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa burung bisa terbang",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa dinosaurus punah sedangkan burung dan mamalia selamat",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.32,
+  "CERUK": 8.67,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 32.6
+ },
+ {
+  "id": "segitiga",
+  "label": "Misteri Segitiga Bermuda",
+  "niche": "laut",
+  "covered": null,
+  "jml": 11,
+  "pendek": 9,
+  "gy": 2,
+  "y": 3,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 20.1,
+  "prov": 11,
+  "sekolah": 1,
+  "islam": 1,
+  "hibur": 0,
+  "sains": 1,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu segitiga bermuda",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa itu segitiga bermuda di laut",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa rahasia segitiga bermuda",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa arti segitiga bermuda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa misteri segitiga bermuda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu segitiga bermuda indonesia",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "google apa itu segitiga bermuda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu pulau segitiga bermuda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu waktu segitiga bermuda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "jelaskan apa itu segitiga bermuda",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu segitiga bermuda menurut islam",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 2.1,
+  "CERUK": 4.67,
+  "NIAT10": 0.0,
+  "LINTAS": 1.82,
+  "TONTON": 2.73,
+  "skor": 32.5
+ },
+ {
+  "id": "tindihan",
+  "label": "Kenapa Ketindihan Saat Tidur?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 1,
+  "pendek": 1,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 1.2,
+  "prov": 1,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu mimpi ketindihan",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.21,
+  "CERUK": 8.67,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 32.3
+ },
+ {
+  "id": "nasi_basi",
+  "label": "Kenapa Nasi Cepat Basi?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 5,
+  "pendek": 1,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa nasi cepat basi",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa nasi di mejikom cepat basi",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa nasi di mejikom cepat kering",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa nasi cepat basi di rice cooker",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa nasi di magic com cepat basi",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.65,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 32.0
+ },
+ {
+  "id": "makan_ngantuk",
+  "label": "Kenapa Habis Makan Ngantuk?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 3,
+  "pendek": 3,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa habis makan mual",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa habis makan ngantuk",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa habis makan jantung berdebar",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.63,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 31.9
+ },
+ {
+  "id": "ufo",
+  "label": "UFO & Alien: Apa Kata Sains?",
+  "niche": "antariksa",
+  "covered": null,
+  "jml": 4,
+  "pendek": 4,
+  "gy": 1,
+  "y": 2,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 16.5,
+  "prov": 4,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 1,
+  "visual": 2,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "apa itu ufo",
+    "G": true,
+    "Y": true
+   },
+   {
+    "f": "apa ufo itu ada",
+    "G": false,
+    "Y": true
+   },
+   {
+    "f": "apa itu ufo main made",
+    "G": true,
+    "Y": false
+   },
+   {
+    "f": "apa itu ufo dan alien",
+    "G": true,
+    "Y": false
+   }
+  ],
+  "VOL": 0.83,
+  "CERUK": 4.67,
+  "NIAT10": 0.0,
+  "LINTAS": 2.5,
+  "TONTON": 5.0,
+  "skor": 31.7
+ },
+ {
+  "id": "keringat",
+  "label": "Kenapa Berkeringat?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 3,
+  "pendek": 2,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa tangan berkeringat",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa tangan sering berkeringat",
+    "G": false,
+    "Y": false
+   },
+   {
+    "f": "kenapa tangan dan kaki sering berkeringat",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.53,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 31.6
+ },
+ {
+  "id": "ayam",
+  "label": "Kenapa Ayam Berkokok Pagi Hari?",
+  "niche": "hewan",
+  "covered": null,
+  "jml": 1,
+  "pendek": 1,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "seeds": 1,
+  "bobot": 0.0,
+  "prov": 0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [
+   {
+    "f": "kenapa lutut ayam di belakang",
+    "G": false,
+    "Y": false
+   }
+  ],
+  "VOL": 0.21,
+  "CERUK": 5.33,
+  "NIAT10": 0.0,
+  "LINTAS": 1.98,
+  "TONTON": 4.68,
+  "skor": 30.6
+ },
+ {
+  "id": "bersin",
+  "label": "Kenapa Kita Bersin?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 0,
+  "pendek": 0,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "prov": 0,
+  "seeds": 0,
+  "bobot": 0.0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [],
+  "VOL": 0.0,
+  "CERUK": 0,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 10.0
+ },
+ {
+  "id": "merinding",
+  "label": "Kenapa Merinding?",
+  "niche": "tubuh",
+  "covered": null,
+  "jml": 0,
+  "pendek": 0,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "prov": 0,
+  "seeds": 0,
+  "bobot": 0.0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [],
+  "VOL": 0.0,
+  "CERUK": 0,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 10.0
+ },
+ {
+  "id": "nyamuk",
+  "label": "Kenapa Nyamuk Suka Menggigit?",
+  "niche": "hewan",
+  "covered": null,
+  "jml": 0,
+  "pendek": 0,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "prov": 0,
+  "seeds": 0,
+  "bobot": 0.0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 2,
+  "visual": 1,
+  "ever": 0,
+  "top_frasa": [],
+  "VOL": 0.0,
+  "CERUK": 0,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 10.0
+ },
+ {
+  "id": "bom_atom",
+  "label": "Bagaimana Bom Atom Bekerja?",
+  "niche": "fisika",
+  "covered": null,
+  "jml": 0,
+  "pendek": 0,
+  "gy": 0,
+  "y": 0,
+  "niat": 0,
+  "prov": 0,
+  "seeds": 0,
+  "bobot": 0.0,
+  "sekolah": 0,
+  "islam": 0,
+  "hibur": 0,
+  "sains": 3,
+  "visual": 3,
+  "ever": 0,
+  "top_frasa": [],
+  "VOL": 0.0,
+  "CERUK": 0,
+  "NIAT10": 0.0,
+  "LINTAS": 0.0,
+  "TONTON": 0.0,
+  "skor": 10.0
+ }
+]
