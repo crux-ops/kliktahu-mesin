@@ -6,8 +6,8 @@
 ## Status proyek
 
 - Repo: `crux-ops/kliktahu-mesin` (akun baru, repo publik).
-- Tahap berjalan: **Tahap 1 SELESAI** - riset real-time (lihat analisis/RISET_TEKNO_2026-09-26.md).
-- Berikutnya: Tahap 2 bagian A (renderer skia-python).
+- Tahap berjalan: **Tahap 2A BERJALAN** - renderer skia (kode di-push, menunggu CI GitHub).
+- Berikutnya: verifikasi bukti-A dari Actions, lalu Tahap 2B.
 - Larangan: JANGAN membuat episode/video apa pun sampai pemilik memerintahkan.
 - Semua render/pratinjau/sampel media HANYA di GitHub Actions. Tidak ada render di workspace chat.
 - Uji logika murni tanpa media (syntax, import, matematika) boleh jalan lokal supaya tidak
@@ -57,7 +57,8 @@ Diketahui pernah ada (file tidak ada di backup, informatif saja):
       tanpa librosa. Zona aman QC: atas 180 / bawah 480 / kanan 160 / kiri 60 px.
       Encode: 1080p60 VBR 14 Mbps, 1080p30 10 Mbps, 1440p30 20 Mbps, AAC 256k,
       -14 LUFS, TP -1 dBTP. Target durasi episode baru 45-75 detik.
-- [ ] A. Renderer (skia-python + deterministik + preview/final).
+- [~] A. Renderer (paket kt/: spec, rng, pool, canvas, proof_a; uji logika 6/6 lokal;
+      uji Skia + lembar bukti di CI test.yml; pratinjau via artefak GitHub).
 - [ ] B. Motion graphics & animasi (keyframe, kinetik, 15+ transisi, finishing sinematik).
 - [ ] C. Sinkron kata (forced alignment word timestamps).
 - [ ] D. SFX sintetis (tanpa musik) + ducking.

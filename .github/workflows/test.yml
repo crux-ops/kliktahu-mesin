@@ -1,0 +1,39 @@
+name: Uji Mesin + Bukti Pratinjau
+
+# CI mesin v3: uji semua modul + hasilkan lembar bukti per bagian.
+# SEMUA media (PNG/sampel) hanya dibuat di sini, bukan di workspace.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  uji:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-engine.txt
+      - name: Pustaka sistem untuk Skia
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libgl1 libfontconfig1
+      - name: Pasang dependensi mesin
+        run: pip install -q -r requirements-engine.txt
+      - name: Uji unit + Skia
+        run: python -m pytest tests/ -q
+      - name: Bukti Bagian A (lembar renderer)
+        run: python -m kt.proof_a --outdir proof-a
+      - name: Unggah bukti
+        uses: actions/upload-artifact@v4
+        with:
+          name: bukti-a-renderer
+          path: proof-a/*
+          retention-days: 14
