@@ -1,0 +1,61 @@
+name: Pratinjau cepat (QC visual)
+
+# Cek cepat TANPA render penuh: 8 frame kunci + montase berlabel.
+# Dipakai untuk memastikan tata letak & animasi bagus sebelum render panjang.
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Slug episode"
+        default: "ep24_bulan_merah"
+        required: true
+      ss:
+        description: "Supersampling pratinjau (2.0 = sesuai tampilan akhir)"
+        default: "2.0"
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -q -r requirements.txt
+      - name: Siapkan episode
+        env:
+          EP: ${{ inputs.episode }}
+        run: |
+          set -euo pipefail
+          source "episodes/$EP/config.env"
+          cp "episodes/$EP/content.json" .
+          mkdir -p audio audio_proc build
+          cp "episodes/$EP/audio_raw/"*.wav audio/
+          export KT_BUILD=build
+          SPEED=$SPEED python3 process_audio.py | tail -3
+          MAXDUR=$MAXDUR python3 build_timeline.py | tail -4
+          SPEED=$SPEED python3 build_audio.py | tail -2
+      - name: Render 8 frame pratinjau + montase
+        env:
+          EP: ${{ inputs.episode }}
+          SS_IN: ${{ inputs.ss }}
+        run: |
+          set -euo pipefail
+          source "episodes/$EP/config.env"
+          export KT_BUILD=build
+          python3 render.py --times auto --ss "$SS_IN" --sharpen "$SHARPEN" --sheet --outdir build/preview | tail -12
+      - name: Audit tata letak
+        run: python3 check_layout.py | tail -14
+      - name: Unggah montase
+        uses: actions/upload-artifact@v4
+        with:
+          name: pratinjau-${{ inputs.episode }}
+          path: |
+            build/prev_sheet.png
+            build/preview/*
+          retention-days: 14

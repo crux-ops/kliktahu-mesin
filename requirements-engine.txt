@@ -1,0 +1,11 @@
+# Mesin v3 - pin versi Tahap 1 (ditambah per bagian upgrade).
+skia-python==144.0.post2
+numpy==2.4.6
+pillow==12.3.0
+imageio-ffmpeg==0.6.0
+scipy==1.17.1
+soundfile==0.14.0
+pytest>=8
+faster-whisper==1.2.1
+pedalboard==0.9.25
+pyloudnorm==0.2.0

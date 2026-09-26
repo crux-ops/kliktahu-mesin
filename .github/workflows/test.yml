@@ -1,0 +1,123 @@
+name: Uji Mesin + Bukti Pratinjau
+
+# CI mesin v3: uji semua modul + hasilkan lembar bukti per bagian.
+# SEMUA media (PNG/sampel) hanya dibuat di sini, bukan di workspace.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  uji:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-engine.txt
+      - name: Pustaka sistem untuk Skia
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libgl1 libfontconfig1
+      - name: Pasang dependensi mesin
+        run: pip install -q -r requirements-engine.txt
+      - name: Uji unit + Skia
+        run: |
+          kode=0
+          python -m pytest tests/ -q --tb=short > hasil-uji.txt 2>&1 || kode=$?
+          tail -c 3000 hasil-uji.txt
+          python tools/anotasi_gagal.py $kode hasil-uji.txt
+          exit $kode
+      - name: Bukti Bagian A (lembar renderer)
+        if: success()
+        run: python -m kt.proof_a --outdir proof-a
+      - name: Bukti Bagian B (montase gerak)
+        if: success()
+        run: python -m kt.proof_b --outdir proof-b
+      - name: Bukti Bagian C (selaras kata)
+        if: success()
+        run: |
+          kode=0
+          python -m kt.proof_c --outdir proof-c > hasil-proof-c.txt 2>&1 || kode=$?
+          tail -c 2000 hasil-proof-c.txt
+          python tools/anotasi_gagal.py $kode hasil-proof-c.txt "Ekor bukti C"
+          exit $kode
+      - name: Bukti Bagian D (SFX + ducking)
+        if: success()
+        run: python -m kt.proof_d --outdir proof-d
+      - name: Unggah bukti
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bukti-mesin
+          path: |
+            proof-a/*
+            proof-b/*
+            proof-c/*
+            proof-d/*
+            hasil-uji.txt
+            hasil-proof-c.txt
+          retention-days: 14
+      - name: Simpan bukti ke branch
+        if: success() && github.event_name == 'push'
+        run: |
+          mkdir -p bukti/2a-renderer bukti/2b-motion bukti/2c-align bukti/2d-sfx
+          cp proof-a/*.png bukti/2a-renderer/
+          cp proof-b/*.png bukti/2b-motion/
+          cp proof-c/*.png bukti/2c-align/
+          cp proof-d/*.png proof-d/*.wav bukti/2d-sfx/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bukti/
+          git diff --cached --quiet && echo "bukti tak berubah" || (
+            git commit -q -m "Bukti: A + B + C + SFX D [skip ci]" && git push)
+
+  bukti-e:
+    needs: uji
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-vo.txt
+      - name: Pustaka sistem untuk Skia
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libgl1 libfontconfig1
+      - name: Pasang dependensi VO
+        run: pip install -q -r requirements-vo.txt
+      - name: Bukti Bagian E (VO + audisi)
+        run: |
+          kode=0
+          python -m kt.proof_e --outdir proof-e > hasil-proof-e.txt 2>&1 || kode=$?
+          tail -c 2000 hasil-proof-e.txt
+          python tools/anotasi_gagal.py $kode hasil-proof-e.txt "Ekor bukti E"
+          exit $kode
+      - name: Unggah bukti E
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bukti-mesin-e
+          path: |
+            proof-e/*
+            hasil-proof-e.txt
+          retention-days: 14
+      - name: Simpan bukti E ke branch
+        if: success() && github.event_name == 'push'
+        run: |
+          mkdir -p bukti/2e-vo
+          cp proof-e/*.png proof-e/*.wav bukti/2e-vo/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bukti/
+          git diff --cached --quiet && echo "bukti tak berubah" || (
+            git commit -q -m "Bukti: VO E [skip ci]" && git push)
