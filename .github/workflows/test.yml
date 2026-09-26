@@ -21,10 +21,10 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements-engine.txt
-      - name: Pustaka sistem untuk Skia
+      - name: Pustaka sistem (Skia + suara)
         run: |
           sudo apt-get update
-          sudo apt-get install -y libegl1 libgl1 libfontconfig1
+          sudo apt-get install -y libegl1 libgl1 libfontconfig1 espeak-ng
       - name: Pasang dependensi mesin
         run: pip install -q -r requirements-engine.txt
       - name: Uji unit + Skia
@@ -40,24 +40,35 @@ jobs:
       - name: Bukti Bagian B (montase gerak)
         if: success()
         run: python -m kt.proof_b --outdir proof-b
+      - name: Bukti Bagian C (selaras kata)
+        if: success()
+        run: |
+          kode=0
+          python -m kt.proof_c --outdir proof-c > hasil-proof-c.txt 2>&1 || kode=$?
+          tail -c 2000 hasil-proof-c.txt
+          python tools/anotasi_gagal.py $kode hasil-proof-c.txt "Ekor bukti C"
+          exit $kode
       - name: Unggah bukti
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: bukti-renderer-gerak
+          name: bukti-mesin
           path: |
             proof-a/*
             proof-b/*
+            proof-c/*
             hasil-uji.txt
+            hasil-proof-c.txt
           retention-days: 14
       - name: Simpan bukti ke branch
         if: success() && github.event_name == 'push'
         run: |
-          mkdir -p bukti/2a-renderer bukti/2b-motion
+          mkdir -p bukti/2a-renderer bukti/2b-motion bukti/2c-align
           cp proof-a/*.png bukti/2a-renderer/
           cp proof-b/*.png bukti/2b-motion/
+          cp proof-c/*.png bukti/2c-align/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add bukti/2a-renderer/ bukti/2b-motion/
+          git add bukti/
           git diff --cached --quiet && echo "bukti tak berubah" || (
-            git commit -q -m "Bukti: lembar A + montase B [skip ci]" && git push)
+            git commit -q -m "Bukti: lembar A + montase B + selaras C [skip ci]" && git push)
