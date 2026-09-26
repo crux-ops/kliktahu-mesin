@@ -6,7 +6,7 @@
 ## Status proyek
 
 - Repo: `crux-ops/kliktahu-mesin` (akun baru, repo publik).
-- Tahap berjalan: **Tahap 2C BERJALAN** - sinkron kata (kode di-push, menunggu CI GitHub).
+- Tahap berjalan: **Tahap 2C SELESAI** (26 Sep 2026). Berikutnya: Tahap 2D (SFX sintetis + ducking).
 - Berikutnya: verifikasi bukti-A dari Actions, lalu Tahap 2B.
 - Larangan: JANGAN membuat episode/video apa pun sampai pemilik memerintahkan.
 - Semua render/pratinjau/sampel media HANYA di GitHub Actions. Tidak ada render di workspace chat.
@@ -65,8 +65,12 @@ Diketahui pernah ada (file tidak ada di backup, informatif saja):
       19 transisi + titik sinkron SFX, letterbox + aberasi kromatik.
       28/28 uji hijau di CI; montase bukti/2b-motion/ deterministik.
       Pelajaran: MakeFromEncoded malas-decode -> wajib makeRasterImage selagi byte hidup.
-- [~] C. Sinkron kata (align.py: Aligner base-int8 + Word/Utterance + liputan LCS + SRT;
-      uji logika lokal; uji model + bukti garis waktu di CI via espeak-ng).
+- [x] C. Sinkron kata (26 Sep 2026): faster-whisper base int8 + VAD + stempel kata,
+      Word/Utterance + kueri waktu + liputan LCS + SRT + prompt opsional.
+      34/34 uji hijau di CI; bukti/2c-align/ deterministik (liputan 5/6=83%).
+      Fixture: fixtures/bicara-id.mp3 (neural ID koma-jeda, 34KB).
+      Pelajaran: espeak-ng id jelek (0/3); prompt transkrip 6/6 tapi ganda;
+      koma-jeda 5/6 bersih -> dipakai + batas 0.8.
 - [ ] D. SFX sintetis (tanpa musik) + ducking.
 - [ ] E. Audio VO (pace 1,8-1,9 k/detik, -14 LUFS, QC isi hilang 30 ms).
 - [ ] F. QC otomatis (zona aman UI, WCAG, frame diam, kedip, A/V sync, golden frame).
