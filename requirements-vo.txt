@@ -3,7 +3,9 @@
 --index-url https://download.pytorch.org/whl/cpu
 --extra-index-url https://pypi.org/simple
 numpy==1.26.0
-scipy==1.17.1
+# scipy 1.14 (bukan 1.17): 1.17 butuh numpy>=1.26.4, bentrok numpy==1.26.0
+# yang dipatok chatterbox-tts 0.1.1. Hanya env bukti-E; mesin tetap 1.17.
+scipy==1.14.1
 pillow==12.3.0
 soundfile==0.14.0
 imageio-ffmpeg==0.6.0
