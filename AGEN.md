@@ -6,7 +6,7 @@
 ## Status proyek
 
 - Repo: `crux-ops/kliktahu-mesin` (akun baru, repo publik).
-- Tahap berjalan: **Tahap 2B BERJALAN** - motion graphics & animasi (kode di-push, menunggu CI GitHub).
+- Tahap berjalan: **Tahap 2B SELESAI** (26 Sep 2026). Berikutnya: Tahap 2C (sinkron kata/forced alignment).
 - Berikutnya: verifikasi bukti-A dari Actions, lalu Tahap 2B.
 - Larangan: JANGAN membuat episode/video apa pun sampai pemilik memerintahkan.
 - Semua render/pratinjau/sampel media HANYA di GitHub Actions. Tidak ada render di workspace chat.
@@ -60,8 +60,11 @@ Diketahui pernah ada (file tidak ada di backup, informatif saja):
 - [x] A. Renderer (26 Sep 2026): paket kt/ (spec, rng, pool, canvas, proof_a);
       13/13 uji hijau di CI; lembar bukti 1080x1920 deterministik di bukti/2a-renderer/;
       warna BGRA->RGBA terverifikasi; API Skia 144: Style kFill/kStroke_Style, drawImage paint=.
-- [~] B. Motion graphics & animasi (ease, timeline, kamera, motion, 19 transisi, cine;
-      27/27 uji lokal; montase bukti di CI).
+- [x] B. Motion graphics & animasi (26 Sep 2026): 15 easing, trek keyframe,
+      kamera+guncang, kinetik (rise/pop/kata/ketik), 7 elemen, tilt pseudo-3D,
+      19 transisi + titik sinkron SFX, letterbox + aberasi kromatik.
+      28/28 uji hijau di CI; montase bukti/2b-motion/ deterministik.
+      Pelajaran: MakeFromEncoded malas-decode -> wajib makeRasterImage selagi byte hidup.
 - [ ] C. Sinkron kata (forced alignment word timestamps).
 - [ ] D. SFX sintetis (tanpa musik) + ducking.
 - [ ] E. Audio VO (pace 1,8-1,9 k/detik, -14 LUFS, QC isi hilang 30 ms).
