@@ -326,7 +326,8 @@ def sintesis_piper(voice, teks, sr, length_scale=None, seed=SEED):
         cfg = SynthesisConfig(length_scale=float(length_scale))
     pot = []
     for c in voice.synthesize(str(teks), syn_config=cfg):
-        pot.append(c.audio_int16_array().astype(np.float32) / 32768.0)
+        pot.append(np.asarray(c.audio_int16_array, dtype=np.float32)
+                   / 32768.0)
     if not pot:
         raise RuntimeError("piper tak mengeluarkan audio")
     return ke_48k(np.concatenate(pot), sr)
