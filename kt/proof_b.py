@@ -186,7 +186,12 @@ def _opaque_paint():
 def _skia_from_numpy(arr):
     buf = io.BytesIO()
     Image.fromarray(np.ascontiguousarray(arr), "RGB").save(buf, format="PNG")
-    return skia.Image.MakeFromEncoded(buf.getvalue())
+    data = buf.getvalue()
+    lazy = skia.Image.MakeFromEncoded(data)
+    # MakeFromEncoded malas-decode (baca byte belakangan); paksa raster
+    # selagi `data` hidup agar piksel stabil & deterministik.
+    raster = lazy.makeRasterImage()
+    return raster if raster is not None else lazy
 
 
 def draw_cine_row(r, y):

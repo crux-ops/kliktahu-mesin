@@ -138,6 +138,18 @@ def _opaque():
     return p
 
 
+def test_proof_sheet_deterministic_small():
+    # Regresi: montase B harus byte-identik antar render (pernah goyang
+    # karena citra malas-decode MakeFromEncoded + byte sementara).
+    from kt.proof_b import draw_sheet
+    outs = []
+    for _ in range(2):
+        r = Renderer(1080, 1920, ss=1.0, out_scale=0.125)
+        draw_sheet(r, 7)
+        outs.append(r.png_bytes())
+    assert outs[0] == outs[1]
+
+
 def test_camera_apply_deterministic():
     def _shot(cam, sh=None):
         r = Renderer(W, H, ss=1.0)
