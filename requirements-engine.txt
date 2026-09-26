@@ -7,3 +7,4 @@ scipy==1.17.1
 soundfile==0.14.0
 pytest>=8
 faster-whisper==1.2.1
+edge-tts  # SEMENTARA: bootstrap fixture suara (hapus setelah fixtures/ mendarat)
