@@ -165,11 +165,15 @@ def star_path(cx, cy, r_out, r_in, n=5, rot=-90.0):
 
 def _snapshot_to_pil(surface, target_w, target_h):
     img = surface.makeImageSnapshot()
+    # Catatan: piksel mentah raster Skia x86_64 = BGRA (N32 little-endian),
+    # jadi kanal R dan B harus ditukar. Jalur PNG sudah benar dari Skia.
     # Jalur 1: bytes mentah langsung (tercepat).
     try:
         raw = img.tobytes()
         w, h = img.width(), img.height()
-        pil = Image.frombytes("RGBA", (w, h), raw)
+        tmp = Image.frombytes("RGBA", (w, h), raw)
+        b, g, r, a = tmp.split()
+        pil = Image.merge("RGBA", (r, g, b, a))
     except Exception:
         pil = None
     # Jalur 2: ronde PNG via SkData + PIL (paling kompatibel).
@@ -190,6 +194,7 @@ def _snapshot_to_pil(surface, target_w, target_h):
         buf = ctypes.string_at(pm.addr(), h * row)
         wide = np.frombuffer(buf, dtype=np.uint8).reshape(h, row)
         arr = wide[:, :w * 4].reshape(h, w, 4)
+        arr = arr[:, :, [2, 1, 0, 3]]  # BGRA -> RGBA
         pil = Image.fromarray(arr.copy(), "RGBA")
     w, h = pil.size
     if (w, h) != (target_w, target_h):

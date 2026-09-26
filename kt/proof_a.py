@@ -37,11 +37,11 @@ def draw_sheet(r: Renderer, seed: int):
     # kartu bayangan + lingkaran AA + bintang path
     soft_shadow(c, 80, 380, 920, 420, 48)
     c.drawRoundRect(skia.Rect.MakeXYWH(80, 380, 920, 420), 48, 48, fill_paint(argb(255, 255, 255, 255)))
-    c.drawCircle(300, 590, 120, fill_paint(ACCENT))
-    c.drawCircle(300, 590, 120, stroke_paint(INK, 6))
-    c.drawPath(star_path(700, 590, 130, 55), fill_paint(GOLD))
-    c.drawPath(star_path(700, 590, 130, 55), stroke_paint(INK, 5))
-    r.text.draw_center(c, 540, 470, "ANTI-ALIASING + PATH", "Poppins-SemiBold.ttf", 36, INK)
+    c.drawCircle(300, 625, 105, fill_paint(ACCENT))
+    c.drawCircle(300, 625, 105, stroke_paint(INK, 6))
+    c.drawPath(star_path(700, 625, 115, 48), fill_paint(GOLD))
+    c.drawPath(star_path(700, 625, 115, 48), stroke_paint(INK, 5))
+    r.text.draw_center(c, 540, 448, "ANTI-ALIASING + PATH", "Poppins-SemiBold.ttf", 36, INK)
     # panel kaca di atas pola warna
     for i, col in enumerate(["#B2542A", "#1F7A6D", "#3B4E8C", "#C9A227"]):
         c.drawRect(skia.Rect.MakeXYWH(80 + i * 230, 860, 230, 260), fill_paint(hex_to_argb(col)))
