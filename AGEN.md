@@ -6,8 +6,8 @@
 ## Status proyek
 
 - Repo: `crux-ops/kliktahu-mesin` (akun baru, repo publik).
-- Tahap berjalan: **Tahap 0 SELESAI** - bersih-bersih warisan AI lama.
-- Berikutnya: Tahap 1 (riset real-time), lalu Tahap 2 bagian A-J.
+- Tahap berjalan: **Tahap 1 SELESAI** - riset real-time (lihat analisis/RISET_TEKNO_2026-09-26.md).
+- Berikutnya: Tahap 2 bagian A (renderer skia-python).
 - Larangan: JANGAN membuat episode/video apa pun sampai pemilik memerintahkan.
 - Semua render/pratinjau/sampel media HANYA di GitHub Actions. Tidak ada render di workspace chat.
 - Uji logika murni tanpa media (syntax, import, matematika) boleh jalan lokal supaya tidak
@@ -51,7 +51,12 @@ Diketahui pernah ada (file tidak ada di backup, informatif saja):
       lama (18-19 Sep), script usang peringkat_topik.py. Diarahkan: tidak ada file DRAFT/PEMETA.
       longform/ lama DIPERTAHANKAN sampai pengganti lulus uji. analisis_mendalam.py dibuat
       mandiri (baca gabungan_frasa_2026-09-26.json), skor identik.
-- [ ] Tahap 1: riset real-time (tren motion, retensi Shorts, versi pustaka, rekomendasi YouTube).
+- [x] Tahap 1 (26 Sep 2026): riset real-time. Keputusan: pin skia-python 144.0.post2,
+      faster-whisper 1.2.1 (bukan WhisperX), pedalboard 0.9.25, pyloudnorm 0.2.0,
+      numpy 2.4.6, pillow 12.3.0, imageio-ffmpeg 0.6.0, scipy 1.17.1, soundfile 0.14.0;
+      tanpa librosa. Zona aman QC: atas 180 / bawah 480 / kanan 160 / kiri 60 px.
+      Encode: 1080p60 VBR 14 Mbps, 1080p30 10 Mbps, 1440p30 20 Mbps, AAC 256k,
+      -14 LUFS, TP -1 dBTP. Target durasi episode baru 45-75 detik.
 - [ ] A. Renderer (skia-python + deterministik + preview/final).
 - [ ] B. Motion graphics & animasi (keyframe, kinetik, 15+ transisi, finishing sinematik).
 - [ ] C. Sinkron kata (forced alignment word timestamps).
