@@ -14,7 +14,9 @@ pedalboard==0.9.25
 pyloudnorm==0.2.0
 piper-tts==1.8.0
 onnx==1.23.0
-setuptools>=75
+# setuptools 80: terakhir dengan pkg_resources (librosa 0.10 butuh);
+# setuptools 81+ menghapus pkg_resources.
+setuptools==80.9.0
 torch==2.6.0
 torchaudio==2.6.0
 transformers==4.46.3
