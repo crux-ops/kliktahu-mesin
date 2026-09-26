@@ -6,7 +6,7 @@
 ## Status proyek
 
 - Repo: `crux-ops/kliktahu-mesin` (akun baru, repo publik).
-- Tahap berjalan: **Tahap 2A BERJALAN** - renderer skia (kode di-push, menunggu CI GitHub).
+- Tahap berjalan: **Tahap 2A SELESAI** (26 Sep 2026). Berikutnya: Tahap 2B (motion graphics & animasi).
 - Berikutnya: verifikasi bukti-A dari Actions, lalu Tahap 2B.
 - Larangan: JANGAN membuat episode/video apa pun sampai pemilik memerintahkan.
 - Semua render/pratinjau/sampel media HANYA di GitHub Actions. Tidak ada render di workspace chat.
@@ -57,8 +57,9 @@ Diketahui pernah ada (file tidak ada di backup, informatif saja):
       tanpa librosa. Zona aman QC: atas 180 / bawah 480 / kanan 160 / kiri 60 px.
       Encode: 1080p60 VBR 14 Mbps, 1080p30 10 Mbps, 1440p30 20 Mbps, AAC 256k,
       -14 LUFS, TP -1 dBTP. Target durasi episode baru 45-75 detik.
-- [~] A. Renderer (paket kt/: spec, rng, pool, canvas, proof_a; uji logika 6/6 lokal;
-      uji Skia + lembar bukti di CI test.yml; pratinjau via artefak GitHub).
+- [x] A. Renderer (26 Sep 2026): paket kt/ (spec, rng, pool, canvas, proof_a);
+      13/13 uji hijau di CI; lembar bukti 1080x1920 deterministik di bukti/2a-renderer/;
+      warna BGRA->RGBA terverifikasi; API Skia 144: Style kFill/kStroke_Style, drawImage paint=.
 - [ ] B. Motion graphics & animasi (keyframe, kinetik, 15+ transisi, finishing sinematik).
 - [ ] C. Sinkron kata (forced alignment word timestamps).
 - [ ] D. SFX sintetis (tanpa musik) + ducking.
