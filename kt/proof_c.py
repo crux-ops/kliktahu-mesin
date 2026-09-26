@@ -5,8 +5,7 @@ Menegaskan: determinisme 2x selaras + liputan >= 50% + stempel monoton.
 """
 import argparse
 import os
-import subprocess
-import wave
+from pathlib import Path
 
 import skia
 
@@ -28,18 +27,9 @@ MUTED = argb(255, 150, 145, 135)
 
 KALIMAT = "Jantung memompa darah ke seluruh tubuh."
 MODEL = "base"
-BATAS_LIPUTAN = 0.5
-
-
-def bicara_espeak(teks, wav_path):
-    r = subprocess.run(["espeak-ng", "-v", "id", "-s", "150",
-                        "-w", wav_path, teks],
-                       capture_output=True, text=True)
-    if r.returncode != 0:
-        raise RuntimeError(f"espeak-ng gagal: {r.stderr[-500:]}")
-    with wave.open(wav_path, "rb") as f:
-        dur = f.getnframes() / float(f.getframerate())
-    return dur
+BATAS_LIPUTAN = 0.8  # terbukti sapu C3: 5/6 tanpa prompt
+REPO = Path(__file__).resolve().parent.parent
+FIXTURE = REPO / "fixtures" / "bicara-id.mp3"
 
 
 def selaras_dan_periksa(wav_path):
@@ -53,7 +43,8 @@ def selaras_dan_periksa(wav_path):
     assert check_monotonic(a), "stempel kata tak monoton"
     cov = coverage(KALIMAT, a)
     assert cov["rasio"] >= BATAS_LIPUTAN, f"liputan {cov} di bawah batas"
-    return a, cov
+    dur = max(w.end for w in a) + 0.3
+    return a, cov, dur
 
 
 def _kartu(c, tc, x, y, w, label, teks, aksen):
@@ -73,7 +64,7 @@ def draw_sheet(r: Renderer, seed: int, words, cov, dur):
                                      hex_to_argb("#3A3A44")))
     tc.draw_center(c, W / 2, 62, "SINKRON KATA (C)", "Poppins-Bold.ttf",
                    68, argb(255, 246, 241, 232))
-    tc.draw_center(c, W / 2, 120, f"espeak-ng id -> faster-whisper {MODEL} int8",
+    tc.draw_center(c, W / 2, 120, f"suara neural ID -> faster-whisper {MODEL} int8",
                    "Poppins-Regular.ttf", 30, MUTED)
     y = 186
     y = _kartu(c, tc, 60, y, W - 120, "DIHARAPKAN", KALIMAT, TEAL) + 18
@@ -155,10 +146,10 @@ def main():
     a = ap.parse_args()
     os.makedirs(a.outdir, exist_ok=True)
     seed = 7
-    wav_path = a.wav or os.path.join(a.outdir, "bicara.wav")
-    dur = bicara_espeak(KALIMAT, wav_path)
+    wav_path = a.wav or str(FIXTURE)
+    assert os.path.exists(wav_path), f"audio hilang: {wav_path}"
+    words, cov, dur = selaras_dan_periksa(wav_path)
     print(f"audio: {wav_path} ({dur:.2f}s)")
-    words, cov = selaras_dan_periksa(wav_path)
     for w in words:
         print(f"  {w.start:6.2f}-{w.end:6.2f} {w.conf:.2f} {w.text}")
     print(f"liputan: {cov['cocok']}/{cov['total']} = {cov['rasio']:.2f}")
