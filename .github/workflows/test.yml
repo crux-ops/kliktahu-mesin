@@ -48,6 +48,9 @@ jobs:
           tail -c 2000 hasil-proof-c.txt
           python tools/anotasi_gagal.py $kode hasil-proof-c.txt "Ekor bukti C"
           exit $kode
+      - name: Bukti Bagian D (SFX + ducking)
+        if: success()
+        run: python -m kt.proof_d --outdir proof-d
       - name: Unggah bukti
         if: always()
         uses: actions/upload-artifact@v4
@@ -57,18 +60,20 @@ jobs:
             proof-a/*
             proof-b/*
             proof-c/*
+            proof-d/*
             hasil-uji.txt
             hasil-proof-c.txt
           retention-days: 14
       - name: Simpan bukti ke branch
         if: success() && github.event_name == 'push'
         run: |
-          mkdir -p bukti/2a-renderer bukti/2b-motion bukti/2c-align
+          mkdir -p bukti/2a-renderer bukti/2b-motion bukti/2c-align bukti/2d-sfx
           cp proof-a/*.png bukti/2a-renderer/
           cp proof-b/*.png bukti/2b-motion/
           cp proof-c/*.png bukti/2c-align/
+          cp proof-d/*.png proof-d/*.wav bukti/2d-sfx/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add bukti/
           git diff --cached --quiet && echo "bukti tak berubah" || (
-            git commit -q -m "Bukti: lembar A + montase B + selaras C [skip ci]" && git push)
+            git commit -q -m "Bukti: A + B + C + SFX D [skip ci]" && git push)
