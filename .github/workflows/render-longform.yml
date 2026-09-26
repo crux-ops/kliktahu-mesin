@@ -1,0 +1,60 @@
+name: Render YouTube Long-form 16:9
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: 'Folder longform episode'
+        required: true
+        default: 'ep01_besar_tapi_miskin'
+      render_video:
+        description: 'Render animatic 16:9'
+        required: true
+        default: 'true'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          pip install -r requirements.txt
+      - name: Render preview and animatic
+        env:
+          EP: ${{ inputs.episode }}
+          RENDER_VIDEO: ${{ inputs.render_video }}
+        run: |
+          set -euo pipefail
+          [ -d "longform/$EP" ] || { echo "episode tidak ditemukan: longform/$EP"; exit 1; }
+          if [ "$RENDER_VIDEO" = "true" ]; then
+            python3 longform/render_longform.py --episode "$EP" --preview --render
+          else
+            python3 longform/render_longform.py --episode "$EP" --preview
+          fi
+      - name: Package deliverables
+        env:
+          EP: ${{ inputs.episode }}
+        run: |
+          set -euo pipefail
+          mkdir -p artifact
+          cp "longform/$EP/preview_sheet.jpg" artifact/ 2>/dev/null || true
+          find "longform/$EP" -maxdepth 1 -type f -name '*.mp4' -exec cp {} artifact/ \;
+          cp "longform/$EP/METADATA.md" artifact/
+          cp "longform/$EP/content.json" artifact/
+          ls -la artifact/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KlikTahu-Longform-${{ inputs.episode }}
+          path: artifact/
+          if-no-files-found: error

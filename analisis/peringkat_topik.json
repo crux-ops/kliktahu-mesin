@@ -1,0 +1,968 @@
+[
+ {
+  "topik": "kucing",
+  "jml": 34,
+  "kuat": 25,
+  "niat": 1,
+  "sains": 2,
+  "skor": 58.4,
+  "contoh": [
+   "kenapa anak kucing mengeong terus",
+   "kenapa bulu kucing rontok",
+   "kenapa harimau takut dengan kucing",
+   "kenapa harimau takut kucing"
+  ]
+ },
+ {
+  "topik": "gempa",
+  "jml": 21,
+  "kuat": 16,
+  "niat": 7,
+  "sains": 3,
+  "skor": 47.5,
+  "contoh": [
+   "kenapa ada gempa bumi",
+   "kenapa bisa gempa",
+   "kenapa bisa gempa bumi",
+   "kenapa bisa terjadinya gempa"
+  ]
+ },
+ {
+  "topik": "ngorok",
+  "jml": 22,
+  "kuat": 22,
+  "niat": 4,
+  "sains": 2,
+  "skor": 47.0,
+  "contoh": [
+   "kenapa anak tidur ngorok",
+   "kenapa ayam bisa ngorok",
+   "kenapa ayam ngorok",
+   "kenapa ayam ngorok gak sembuh-sembuh"
+  ]
+ },
+ {
+  "topik": "harga",
+  "jml": 25,
+  "kuat": 25,
+  "niat": 1,
+  "sains": 1,
+  "skor": 46.4,
+  "contoh": [
+   "kenapa harga ayam naik",
+   "kenapa harga beras naik",
+   "kenapa harga emas naik drastis",
+   "kenapa harga emas naik terus"
+  ]
+ },
+ {
+  "topik": "hujan",
+  "jml": 20,
+  "kuat": 20,
+  "niat": 5,
+  "sains": 2.5,
+  "skor": 46.0,
+  "contoh": [
+   "kenapa hujan",
+   "kenapa hujan ada petir",
+   "kenapa hujan bikin sakit",
+   "kenapa hujan bisa terjadi"
+  ]
+ },
+ {
+  "topik": "mimpi",
+  "jml": 21,
+  "kuat": 15,
+  "niat": 4,
+  "sains": 3,
+  "skor": 44.1,
+  "contoh": [
+   "kenapa mimpi bisa jadi kenyataan",
+   "kenapa mimpi bisa terjadi",
+   "kenapa mimpi buruk",
+   "kenapa mimpi buruk terus"
+  ]
+ },
+ {
+  "topik": "tidur",
+  "jml": 22,
+  "kuat": 21,
+  "niat": 0,
+  "sains": 2,
+  "skor": 42.7,
+  "contoh": [
+   "kenapa anak tidur mendengkur",
+   "kenapa anak tidur ngorok",
+   "kenapa bayi ngorok saat tidur",
+   "kenapa bayi tidur mendengkur"
+  ]
+ },
+ {
+  "topik": "cegukan",
+  "jml": 20,
+  "kuat": 17,
+  "niat": 4,
+  "sains": 2,
+  "skor": 41.5,
+  "contoh": [
+   "kenapa bayi cegukan",
+   "kenapa bayi cegukan dan cara mengatasinya",
+   "kenapa bayi cegukan setelah minum asi",
+   "kenapa bisa cegukan tiba tiba"
+  ]
+ },
+ {
+  "topik": "pesawat",
+  "jml": 16,
+  "kuat": 6,
+  "niat": 15,
+  "sains": 2.5,
+  "skor": 41.2,
+  "contoh": [
+   "kenapa pesawat berat bisa terbang",
+   "kenapa pesawat bisa terbang",
+   "kenapa pesawat bisa terbang di udara",
+   "kenapa pesawat bisa terbang menurut ilmu fisika"
+  ]
+ },
+ {
+  "topik": "baterai",
+  "jml": 22,
+  "kuat": 9,
+  "niat": 8,
+  "sains": 1.5,
+  "skor": 40.0,
+  "contoh": [
+   "kenapa baterai cepat habis",
+   "kenapa baterai cepat habis dan panas",
+   "kenapa baterai cepat habis iphone",
+   "kenapa baterai cepat habis padahal baru dicas"
+  ]
+ },
+ {
+  "topik": "laut",
+  "jml": 21,
+  "kuat": 11,
+  "niat": 1,
+  "sains": 2.5,
+  "skor": 37.1,
+  "contoh": [
+   "asal usul kenapa air laut asin",
+   "kenapa air laut asin",
+   "kenapa air laut asin abu nawas",
+   "kenapa air laut asin cerita abu nawas"
+  ]
+ },
+ {
+  "topik": "demam",
+  "jml": 19,
+  "kuat": 13,
+  "niat": 3,
+  "sains": 2,
+  "skor": 36.8,
+  "contoh": [
+   "kenapa anak demam hanya di kepala",
+   "kenapa cowok demam manja",
+   "kenapa demam",
+   "kenapa demam anak naik turun"
+  ]
+ },
+ {
+  "topik": "gigi",
+  "jml": 20,
+  "kuat": 16,
+  "niat": 1,
+  "sains": 1.5,
+  "skor": 36.6,
+  "contoh": [
+   "kenapa gigi berlubang",
+   "kenapa gigi berlubang bau",
+   "kenapa gigi berlubang bau busuk",
+   "kenapa gigi berlubang berdarah"
+  ]
+ },
+ {
+  "topik": "hari",
+  "jml": 20,
+  "kuat": 12,
+  "niat": 8,
+  "sains": 0,
+  "skor": 35.6,
+  "contoh": [
+   "harimau",
+   "kenapa bulan berwarna merah hari ini",
+   "kenapa cegukan terus berhari hari",
+   "kenapa gempa sering terjadi malam hari"
+  ]
+ },
+ {
+  "topik": "jantung",
+  "jml": 19,
+  "kuat": 13,
+  "niat": 1,
+  "sains": 2,
+  "skor": 35.0,
+  "contoh": [
+   "kenapa habis makan jantung berdebar",
+   "kenapa jantung berdebar",
+   "kenapa jantung berdebar debar",
+   "kenapa jantung berdebar kencang"
+  ]
+ },
+ {
+  "topik": "terbang",
+  "jml": 16,
+  "kuat": 6,
+  "niat": 16,
+  "sains": 0,
+  "skor": 34.6,
+  "contoh": [
+   "kenapa burung bisa terbang",
+   "kenapa pesawat berat bisa terbang",
+   "kenapa pesawat bisa terbang",
+   "kenapa pesawat bisa terbang di udara"
+  ]
+ },
+ {
+  "topik": "dinosaurus",
+  "jml": 15,
+  "kuat": 12,
+  "niat": 1,
+  "sains": 3,
+  "skor": 33.3,
+  "contoh": [
+   "alasan kenapa dinosaurus punah",
+   "dinosaurus",
+   "kenapa dinosaurus bisa punah",
+   "kenapa dinosaurus harus punah"
+  ]
+ },
+ {
+  "topik": "berlubang",
+  "jml": 20,
+  "kuat": 16,
+  "niat": 1,
+  "sains": 0,
+  "skor": 32.1,
+  "contoh": [
+   "kenapa gigi berlubang",
+   "kenapa gigi berlubang bau",
+   "kenapa gigi berlubang bau busuk",
+   "kenapa gigi berlubang berdarah"
+  ]
+ },
+ {
+  "topik": "bulan",
+  "jml": 14,
+  "kuat": 8,
+  "niat": 4,
+  "sains": 2.5,
+  "skor": 30.7,
+  "contoh": [
+   "bulan madu di awan biru",
+   "kenapa bulan bercahaya",
+   "kenapa bulan berwarna merah",
+   "kenapa bulan berwarna merah dan besar"
+  ]
+ },
+ {
+  "topik": "berwarna",
+  "jml": 20,
+  "kuat": 10,
+  "niat": 4,
+  "sains": 0,
+  "skor": 30.6,
+  "contoh": [
+   "kenapa air kencing berwarna kuning",
+   "kenapa air kencing berwarna kuning kemerahan",
+   "kenapa air kencing berwarna kuning pekat",
+   "kenapa air kencing berwarna merah"
+  ]
+ },
+ {
+  "topik": "gunung",
+  "jml": 12,
+  "kuat": 12,
+  "niat": 3,
+  "sains": 2.5,
+  "skor": 30.6,
+  "contoh": [
+   "kenapa bisa terjadi gunung meletus",
+   "kenapa gunung berapi meletus",
+   "kenapa gunung bisa meletus",
+   "kenapa gunung meletus"
+  ]
+ },
+ {
+  "topik": "berdebar",
+  "jml": 19,
+  "kuat": 13,
+  "niat": 1,
+  "sains": 0,
+  "skor": 29.0,
+  "contoh": [
+   "kenapa habis makan jantung berdebar",
+   "kenapa jantung berdebar",
+   "kenapa jantung berdebar debar",
+   "kenapa jantung berdebar kencang"
+  ]
+ },
+ {
+  "topik": "kuping",
+  "jml": 16,
+  "kuat": 12,
+  "niat": 0,
+  "sains": 1.5,
+  "skor": 28.9,
+  "contoh": [
+   "kenapa kuping berdenging",
+   "kenapa kuping berdenging kencang",
+   "kenapa kuping berdenging menurut islam",
+   "kenapa kuping berdenging sebelah kanan"
+  ]
+ },
+ {
+  "topik": "mengeong",
+  "jml": 20,
+  "kuat": 11,
+  "niat": 1,
+  "sains": 0,
+  "skor": 28.6,
+  "contoh": [
+   "kenapa anak kucing mengeong terus",
+   "kenapa kucing baru adopsi mengeong terus",
+   "kenapa kucing betina sering mengeong",
+   "kenapa kucing hamil mengeong terus"
+  ]
+ },
+ {
+  "topik": "asin",
+  "jml": 19,
+  "kuat": 9,
+  "niat": 1,
+  "sains": 0,
+  "skor": 26.2,
+  "contoh": [
+   "asal usul kenapa air laut asin",
+   "kenapa air laut asin",
+   "kenapa air laut asin abu nawas",
+   "kenapa air laut asin cerita abu nawas"
+  ]
+ },
+ {
+  "topik": "langit",
+  "jml": 13,
+  "kuat": 6,
+  "niat": 1,
+  "sains": 2.5,
+  "skor": 25.6,
+  "contoh": [
+   "google kenapa langit biru",
+   "kenapa hujan turun dari langit",
+   "kenapa langit berwarna biru",
+   "kenapa langit berwarna biru di malam hari"
+  ]
+ },
+ {
+  "topik": "rambut",
+  "jml": 13,
+  "kuat": 9,
+  "niat": 2,
+  "sains": 1.5,
+  "skor": 25.6,
+  "contoh": [
+   "kenapa rambut beruban di usia muda",
+   "kenapa rambut bisa beruban",
+   "kenapa rambut cepat beruban",
+   "kenapa rambut cepat memutih"
+  ]
+ },
+ {
+  "topik": "internet",
+  "jml": 12,
+  "kuat": 10,
+  "niat": 1,
+  "sains": 1.5,
+  "skor": 24.4,
+  "contoh": [
+   "kenapa internet cepat habis",
+   "kenapa internet indonesia lambat",
+   "kenapa internet iphone lambat",
+   "kenapa internet lambat"
+  ]
+ },
+ {
+  "topik": "merah",
+  "jml": 14,
+  "kuat": 8,
+  "niat": 4,
+  "sains": 0,
+  "skor": 23.2,
+  "contoh": [
+   "kenapa air kencing berwarna merah",
+   "kenapa bulan berwarna merah",
+   "kenapa bulan berwarna merah dan besar",
+   "kenapa bulan berwarna merah hari ini"
+  ]
+ },
+ {
+  "topik": "meletus",
+  "jml": 12,
+  "kuat": 12,
+  "niat": 3,
+  "sains": 0,
+  "skor": 23.1,
+  "contoh": [
+   "kenapa bisa terjadi gunung meletus",
+   "kenapa gunung berapi meletus",
+   "kenapa gunung bisa meletus",
+   "kenapa gunung meletus"
+  ]
+ },
+ {
+  "topik": "kita",
+  "jml": 15,
+  "kuat": 9,
+  "niat": 2,
+  "sains": 0,
+  "skor": 23.1,
+  "contoh": [
+   "kenapa kita bermimpi",
+   "kenapa kita bermimpi buruk",
+   "kenapa kita bermimpi hamil",
+   "kenapa kita bermimpi menikah"
+  ]
+ },
+ {
+  "topik": "tiba",
+  "jml": 14,
+  "kuat": 11,
+  "niat": 1,
+  "sains": 0,
+  "skor": 22.6,
+  "contoh": [
+   "kenapa bisa cegukan tiba tiba",
+   "kenapa cegukan tiba tiba",
+   "kenapa gerinda tiba tiba mati",
+   "kenapa gigi berlubang tiba tiba sakit"
+  ]
+ },
+ {
+  "topik": "laptop",
+  "jml": 14,
+  "kuat": 8,
+  "niat": 3,
+  "sains": 0,
+  "skor": 22.3,
+  "contoh": [
+   "kenapa baterai laptop cepat habis",
+   "kenapa baterai laptop cepat habis padahal tidak digunakan",
+   "kenapa di laptop tidak muncul wifi",
+   "kenapa harga laptop naik"
+  ]
+ },
+ {
+  "topik": "bumi",
+  "jml": 13,
+  "kuat": 8,
+  "niat": 4,
+  "sains": 0,
+  "skor": 22.2,
+  "contoh": [
+   "kenapa ada gempa bumi",
+   "kenapa bisa gempa bumi",
+   "kenapa bumi berputar",
+   "kenapa bumi bulat"
+  ]
+ },
+ {
+  "topik": "makan",
+  "jml": 14,
+  "kuat": 6,
+  "niat": 4,
+  "sains": 0,
+  "skor": 21.8,
+  "contoh": [
+   "kenapa gigi berlubang saat makan sakit",
+   "kenapa habis makan jantung berdebar",
+   "kenapa habis makan mual",
+   "kenapa habis makan ngantuk"
+  ]
+ },
+ {
+  "topik": "punah",
+  "jml": 13,
+  "kuat": 10,
+  "niat": 1,
+  "sains": 0,
+  "skor": 20.9,
+  "contoh": [
+   "alasan kenapa dinosaurus punah",
+   "kenapa dinosaurus bisa punah",
+   "kenapa dinosaurus harus punah",
+   "kenapa dinosaurus punah"
+  ]
+ },
+ {
+  "topik": "karaoke",
+  "jml": 12,
+  "kuat": 12,
+  "niat": 0,
+  "sains": 0,
+  "skor": 20.4,
+  "contoh": [
+   "air bunga karaoke",
+   "aishiteru 2 karaoke",
+   "gelandangan karaoke",
+   "gelas retak karaoke"
+  ]
+ },
+ {
+  "topik": "lambat",
+  "jml": 13,
+  "kuat": 9,
+  "niat": 1,
+  "sains": 0,
+  "skor": 20.2,
+  "contoh": [
+   "kenapa internet indonesia lambat",
+   "kenapa internet iphone lambat",
+   "kenapa internet lambat",
+   "kenapa internet lambat akhir akhir ini"
+  ]
+ },
+ {
+  "topik": "terasa",
+  "jml": 13,
+  "kuat": 10,
+  "niat": 0,
+  "sains": 0,
+  "skor": 20.0,
+  "contoh": [
+   "kenapa geger terasa sakit",
+   "kenapa gigi berlubang terasa sakit",
+   "kenapa kaki terasa dingin",
+   "kenapa luka terasa gatal"
+  ]
+ },
+ {
+  "topik": "manusia",
+  "jml": 12,
+  "kuat": 10,
+  "niat": 1,
+  "sains": 0,
+  "skor": 19.9,
+  "contoh": [
+   "kenapa kucing mengeong ke manusia",
+   "kenapa manusia bisa menguap",
+   "kenapa manusia diciptakan",
+   "kenapa manusia harus menguap"
+  ]
+ },
+ {
+  "topik": "berdenging",
+  "jml": 13,
+  "kuat": 9,
+  "niat": 0,
+  "sains": 0,
+  "skor": 19.3,
+  "contoh": [
+   "kenapa kuping berdenging",
+   "kenapa kuping berdenging kencang",
+   "kenapa kuping berdenging menurut islam",
+   "kenapa kuping berdenging sebelah kanan"
+  ]
+ },
+ {
+  "topik": "mendengkur",
+  "jml": 11,
+  "kuat": 11,
+  "niat": 0,
+  "sains": 0,
+  "skor": 18.7,
+  "contoh": [
+   "kenapa anak tidur mendengkur",
+   "kenapa bayi tidur mendengkur",
+   "kenapa kita tidur mendengkur",
+   "kenapa kucing tidur mendengkur"
+  ]
+ },
+ {
+  "topik": "digunakan",
+  "jml": 9,
+  "kuat": 2,
+  "niat": 9,
+  "sains": 0,
+  "skor": 18.5,
+  "contoh": [
+   "kenapa baterai cepat habis padahal tidak digunakan",
+   "kenapa baterai iphone cepat habis padahal tidak digunakan",
+   "kenapa baterai laptop cepat habis padahal tidak digunakan",
+   "kenapa gemini ai tidak bisa digunakan"
+  ]
+ },
+ {
+  "topik": "biru",
+  "jml": 13,
+  "kuat": 6,
+  "niat": 1,
+  "sains": 0,
+  "skor": 18.1,
+  "contoh": [
+   "bulan madu di awan biru",
+   "google kenapa langit biru",
+   "kenapa langit berwarna biru",
+   "kenapa langit berwarna biru di malam hari"
+  ]
+ },
+ {
+  "topik": "bermimpi",
+  "jml": 11,
+  "kuat": 8,
+  "niat": 1,
+  "sains": 0,
+  "skor": 17.5,
+  "contoh": [
+   "kenapa kita bermimpi",
+   "kenapa kita bermimpi buruk",
+   "kenapa kita bermimpi hamil",
+   "kenapa kita bermimpi menikah"
+  ]
+ },
+ {
+  "topik": "muncul",
+  "jml": 13,
+  "kuat": 4,
+  "niat": 1,
+  "sains": 0,
+  "skor": 16.7,
+  "contoh": [
+   "kenapa di hp sering muncul iklan sendiri",
+   "kenapa di laptop tidak muncul wifi",
+   "kenapa dinosaurus punah dan tidak muncul lagi",
+   "kenapa gelar di ml tidak muncul"
+  ]
+ },
+ {
+  "topik": "memutih",
+  "jml": 10,
+  "kuat": 7,
+  "niat": 1,
+  "sains": 0,
+  "skor": 15.8,
+  "contoh": [
+   "kenapa rambut cepat memutih",
+   "kenapa rambut kaneki memutih",
+   "kenapa rambut manusia memutih",
+   "kenapa rambut memutih"
+  ]
+ },
+ {
+  "topik": "sinyal",
+  "jml": 10,
+  "kuat": 3,
+  "niat": 4,
+  "sains": 0,
+  "skor": 15.7,
+  "contoh": [
+   "kenapa main ml lag padahal sinyal bagus",
+   "kenapa siaran tv digital tidak ada sinyal",
+   "kenapa sinyal hp lemot padahal 4g",
+   "kenapa sinyal hp tiba tiba hilang"
+  ]
+ },
+ {
+  "topik": "panas",
+  "jml": 10,
+  "kuat": 8,
+  "niat": 0,
+  "sains": 0,
+  "skor": 15.6,
+  "contoh": [
+   "kenapa baterai cepat habis dan panas",
+   "kenapa gerinda cepat panas",
+   "kenapa hp mudah cepat panas",
+   "kenapa hujan panas"
+  ]
+ },
+ {
+  "topik": "luka",
+  "jml": 10,
+  "kuat": 8,
+  "niat": 0,
+  "sains": 0,
+  "skor": 15.6,
+  "contoh": [
+   "kenapa luka",
+   "kenapa luka bernanah",
+   "kenapa luka gatal",
+   "kenapa luka kalau mau sembuh gatal"
+  ]
+ },
+ {
+  "topik": "bayi",
+  "jml": 10,
+  "kuat": 6,
+  "niat": 1,
+  "sains": 0,
+  "skor": 15.1,
+  "contoh": [
+   "kenapa bayi cegukan",
+   "kenapa bayi cegukan dan cara mengatasinya",
+   "kenapa bayi cegukan setelah minum asi",
+   "kenapa bayi ngorok saat tidur"
+  ]
+ },
+ {
+  "topik": "tangan",
+  "jml": 10,
+  "kuat": 7,
+  "niat": 0,
+  "sains": 0,
+  "skor": 14.9,
+  "contoh": [
+   "kalau kau suka hati tepuk tangan",
+   "kenapa kulit tangan mengelupas",
+   "kenapa tangan bergetar",
+   "kenapa tangan berkeringat"
+  ]
+ },
+ {
+  "topik": "meninggal",
+  "jml": 10,
+  "kuat": 7,
+  "niat": 0,
+  "sains": 0,
+  "skor": 14.9,
+  "contoh": [
+   "kenapa kita bermimpi orang meninggal",
+   "kenapa kita bermimpi orang yang sudah meninggal",
+   "kenapa lula lahfah meninggal",
+   "kenapa lula meninggal"
+  ]
+ },
+ {
+  "topik": "menguap",
+  "jml": 9,
+  "kuat": 7,
+  "niat": 1,
+  "sains": 0,
+  "skor": 14.8,
+  "contoh": [
+   "kenapa manusia bisa menguap",
+   "kenapa manusia harus menguap",
+   "kenapa manusia menguap",
+   "kenapa manusia menguap keluar air mata"
+  ]
+ },
+ {
+  "topik": "menurut",
+  "jml": 11,
+  "kuat": 2,
+  "niat": 2,
+  "sains": 0,
+  "skor": 14.2,
+  "contoh": [
+   "kenapa air laut asin menurut islam",
+   "kenapa bulan berwarna merah menurut islam",
+   "kenapa dinosaurus punah menurut islam",
+   "kenapa kuping berdenging menurut islam"
+  ]
+ },
+ {
+  "topik": "kaki",
+  "jml": 9,
+  "kuat": 7,
+  "niat": 0,
+  "sains": 0,
+  "skor": 13.9,
+  "contoh": [
+   "kenapa kaki bengkak",
+   "kenapa kaki pecah pecah",
+   "kenapa kaki sering kesemutan",
+   "kenapa kaki sering kram"
+  ]
+ },
+ {
+  "topik": "lutut",
+  "jml": 9,
+  "kuat": 7,
+  "niat": 0,
+  "sains": 0,
+  "skor": 13.9,
+  "contoh": [
+   "kenapa lutut ayam di belakang",
+   "kenapa lutut bunyi krek krek",
+   "kenapa lutut sakit",
+   "kenapa lutut sakit saat ditekuk"
+  ]
+ },
+ {
+  "topik": "haid",
+  "jml": 8,
+  "kuat": 7,
+  "niat": 1,
+  "sains": 0,
+  "skor": 13.8,
+  "contoh": [
+   "kenapa haid bisa lama selesainya",
+   "kenapa haid keluar sedikit",
+   "kenapa haid sebulan 2 kali",
+   "kenapa haid telat"
+  ]
+ },
+ {
+  "topik": "islam",
+  "jml": 11,
+  "kuat": 2,
+  "niat": 1,
+  "sains": 0,
+  "skor": 13.3,
+  "contoh": [
+   "kenapa air laut asin menurut islam",
+   "kenapa bulan berwarna merah menurut islam",
+   "kenapa dinosaurus punah menurut islam",
+   "kenapa kuping berdenging menurut islam"
+  ]
+ },
+ {
+  "topik": "lucu",
+  "jml": 8,
+  "kuat": 7,
+  "niat": 0,
+  "sains": 0,
+  "skor": 12.9,
+  "contoh": [
+   "hantu lucu",
+   "kenapa air laut asin tebakan lucu",
+   "kenapa dinosaurus punah lucu",
+   "kucing lucu"
+  ]
+ },
+ {
+  "topik": "gatal",
+  "jml": 8,
+  "kuat": 7,
+  "niat": 0,
+  "sains": 0,
+  "skor": 12.9,
+  "contoh": [
+   "kenapa bulu kemaluan gatal",
+   "kenapa luka gatal",
+   "kenapa luka kalau mau sembuh gatal",
+   "kenapa luka terasa gatal"
+  ]
+ },
+ {
+  "topik": "sebelah",
+  "jml": 9,
+  "kuat": 5,
+  "niat": 0,
+  "sains": 0,
+  "skor": 12.5,
+  "contoh": [
+   "kenapa airpods mati sebelah",
+   "kenapa baterai tws cepat habis sebelah",
+   "kenapa kuping berdenging sebelah kanan",
+   "kenapa kuping berdenging sebelah kanan menurut islam"
+  ]
+ },
+ {
+  "topik": "kiri",
+  "jml": 9,
+  "kuat": 5,
+  "niat": 0,
+  "sains": 0,
+  "skor": 12.5,
+  "contoh": [
+   "kenapa kuping berdenging sebelah kiri",
+   "kenapa kuping berdenging sebelah kiri menurut islam",
+   "kenapa kuping kiri berdenging",
+   "kenapa kuping kiri berdenging menurut islam"
+  ]
+ },
+ {
+  "topik": "berfungsi",
+  "jml": 8,
+  "kuat": 6,
+  "niat": 0,
+  "sains": 0,
+  "skor": 12.2,
+  "contoh": [
+   "kenapa getar di hp samsung tidak berfungsi",
+   "kenapa kamera laptop tidak berfungsi",
+   "kenapa keyboard laptop tidak berfungsi",
+   "kenapa kursor laptop tidak berfungsi"
+  ]
+ },
+ {
+  "topik": "kencang",
+  "jml": 8,
+  "kuat": 4,
+  "niat": 1,
+  "sains": 0,
+  "skor": 11.7,
+  "contoh": [
+   "kenapa jantung berdebar kencang",
+   "kenapa jantung berdebar kencang dan cemas",
+   "kenapa jantung berdebar kencang dan sesak",
+   "kenapa jantung berdebar kencang padahal tidak melakukan apa apa"
+  ]
+ },
+ {
+  "topik": "malam",
+  "jml": 8,
+  "kuat": 3,
+  "niat": 1,
+  "sains": 0,
+  "skor": 11.0,
+  "contoh": [
+   "kenapa bulan berwarna merah malam ini",
+   "kenapa demam malam saja",
+   "kenapa gempa sering terjadi malam hari",
+   "kenapa kucing mengeong malam hari"
+  ]
+ },
+ {
+  "topik": "kanan",
+  "jml": 8,
+  "kuat": 4,
+  "niat": 0,
+  "sains": 0,
+  "skor": 10.8,
+  "contoh": [
+   "kenapa burung garuda menghadap ke kanan",
+   "kenapa kuping berdenging sebelah kanan",
+   "kenapa kuping berdenging sebelah kanan menurut islam",
+   "kenapa kuping kanan berdenging menurut islam"
+  ]
+ },
+ {
+  "topik": "suka",
+  "jml": 8,
+  "kuat": 3,
+  "niat": 0,
+  "sains": 0,
+  "skor": 10.1,
+  "contoh": [
+   "kalau kau suka hati tepuk tangan",
+   "kenapa buka tiktok suka keluar sendiri",
+   "kenapa kita bermimpi orang yang kita suka",
+   "kenapa kucing suka mengeong di malam hari"
+  ]
+ },
+ {
+  "topik": "yang",
+  "jml": 8,
+  "kuat": 1,
+  "niat": 0,
+  "sains": 0,
+  "skor": 8.7,
+  "contoh": [
+   "hantu yang seram",
+   "kenapa di tenggorokan seperti ada yang mengganjal",
+   "kenapa kita bermimpi orang yang kita suka",
+   "kenapa kita bermimpi orang yang sudah meninggal"
+  ]
+ }
+]

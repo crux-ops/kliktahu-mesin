@@ -1,0 +1,22 @@
+# artefak render (dibuat ulang tiap kali)
+build/
+frames/
+parts/
+audio/
+audio_proc/
+audio_tmp/
+dist/
+list.txt
+video_master.mp4
+*.mp4
+__pycache__/
+*.pyc
+# naskah & timeline kerja (dibuat dari episodes/ + audio_raw/)
+/content.json
+/timeline.json
+# backup / arsip jangan masuk git
+*.zip
+*.bak
+# dokumen pribadi
+docs/*.local
+.env

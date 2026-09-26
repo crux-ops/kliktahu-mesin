@@ -1,0 +1,92 @@
+{
+ "title": "Kenapa Bulan Berwarna Merah?",
+ "channel": "KlikTahu",
+ "header_badge": "LANGIT · SAINS",
+ "bg_element": "none",
+ "lead_in": 0.6,
+ "tail_intro": 0.8,
+ "tail_fact": 0.8,
+ "tail_outro": 1.2,
+ "scenes": [
+  {
+   "id": "intro",
+   "type": "intro",
+   "visual": "intro_redmoon",
+   "accent": "#C2472B",
+   "shake": 0.0,
+   "lines": [
+    "KENAPA BULAN",
+    "BERWARNA MERAH?"
+   ],
+   "vo": "Bulanmu kelihatan kemerahan malam ini? Ternyata ada dua sebab, dan dua-duanya datang dari atmosfer Bumi."
+  },
+  {
+   "id": "f1",
+   "type": "fact",
+   "visual": "horizon",
+   "accent": "#B2542A",
+   "trans": "fade",
+   "badge": "SEBAB 1: BULAN DI UFUK",
+   "vo": "Saat bulan masih rendah di dekat ufuk, cahayanya harus menembus atmosfer yang jauh lebih tebal — sekitar tiga puluh delapan kali lebih tebal daripada saat bulan tepat di atas kepala. Warna biru tersebar habis, yang tersisa hanya jingga dan merah."
+  },
+  {
+   "id": "f2",
+   "type": "fact",
+   "visual": "rayleigh",
+   "accent": "#2F6FB5",
+   "trans": "zoom",
+   "badge": "KUNCINYA: HAMBURAN RAYLEIGH",
+   "vo": "Ini disebut hamburan Rayleigh: warna biru yang berpanjang gelombang pendek paling mudah tersebar. Karena itulah langit biru di siang hari, dan matahari memerah saat terbenam."
+  },
+  {
+   "id": "f3",
+   "type": "fact",
+   "visual": "eclipse",
+   "accent": "#963E56",
+   "trans": "wipe",
+   "badge": "SEBAB 2: GERHANA BULAN TOTAL",
+   "vo": "Sebab kedua: gerhana bulan total. Bumi menghalangi sinar matahari, tapi atmosfer Bumi membelokkan cahaya merah ke permukaan bulan. Seolah semua matahari terbit dan terbenam di Bumi diproyeksikan ke bulan."
+  },
+  {
+   "id": "f4",
+   "type": "fact",
+   "visual": "earthring",
+   "accent": "#1F4E79",
+   "trans": "rise",
+   "badge": "DILIHAT DARI BULAN",
+   "vo": "Kalau berdiri di bulan saat itu, kamu akan melihat Bumi yang gelap dengan cincin merah di sekelilingnya. Bahkan wahana Surveyor tiga pernah memotretnya langsung dari bulan, pada April seribu sembilan ratus enam puluh tujuh."
+  },
+  {
+   "id": "f5",
+   "type": "fact",
+   "visual": "colorvar",
+   "accent": "#7A3FC4",
+   "trans": "fade",
+   "badge": "KENAPA MERAHNYA BEDA-BEDA",
+   "vo": "Warna merahnya juga bisa berbeda tiap gerhana. Makin banyak debu, asap, atau abu gunung berapi di atmosfer, makin pekat merahnya."
+  },
+  {
+   "id": "f6",
+   "type": "fact",
+   "visual": "nextmoon",
+   "accent": "#1F7A6B",
+   "trans": "wipe",
+   "badge": "KAPAN LAGI?",
+   "vo": "Kabar baiknya, gerhana bulan aman dilihat mata telanjang, tanpa kacamata khusus. Gerhana bulan total berikutnya dari Indonesia baru terjadi tiga puluh satu Desember dua ribu dua puluh delapan."
+  },
+  {
+   "id": "outro",
+   "type": "outro",
+   "accent": "#C2472B",
+   "lines": [
+    "SEKARANG",
+    "KAMU TAHU"
+   ],
+   "cta": "IKUTI",
+   "foot": "Fakta langit & sains, tiap hari",
+   "foot2": "Simpan video ini · bagikan ke teman",
+   "src": "Sumber: BMKG · NASA · LPI",
+   "vo": "Ikuti KlikTahu."
+  }
+ ]
+}

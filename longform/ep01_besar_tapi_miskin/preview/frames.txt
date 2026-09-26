@@ -1,0 +1,17 @@
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/01_intro.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/02_scale.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/03_resource.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/04_singapore.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/05_institution.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/06_human.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/07_answer.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/08_outro.png'
+duration 4
+file '/home/user/kliktahu-shorts/longform/ep01_besar_tapi_miskin/preview/09_outro.png'

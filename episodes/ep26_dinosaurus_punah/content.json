@@ -1,0 +1,110 @@
+{
+ "title": "Kenapa Dinosaurus Punah?",
+ "channel": "KlikTahu",
+ "header_badge": "BUMI · SEJARAH",
+ "bg_element": "none",
+ "lead_in": 0.6,
+ "tail_intro": 0.8,
+ "tail_fact": 0.8,
+ "tail_outro": 1.2,
+ "scenes": [
+  {
+   "id": "intro",
+   "type": "intro",
+   "visual": "intro_asteroid",
+   "accent": "#8C4A2F",
+   "shake": 0.0,
+   "lines": [
+    "KENAPA",
+    "DINOSAURUS PUNAH?"
+   ],
+   "vo": "Enam puluh enam juta tahun lalu, sebuah batu raksasa jatuh dari langit. Dunia yang tenang selama seratus enam puluh juta tahun mulai runtuh hanya dalam hitungan jam. Kenapa dinosaurus punah?",
+   "speed": 1.12
+  },
+  {
+   "id": "f1",
+   "type": "fact",
+   "visual": "rock_scale",
+   "accent": "#4A5A6B",
+   "trans": "fade",
+   "badge": "SEBESAR APA BATUNYA?",
+   "vo": "Batunya berdiameter sepuluh sampai lima belas kilometer, lebih besar dari Gunung Everest, dan melaju dua puluh kilometer setiap detik. Energi tumbukannya setara seratus juta megaton TNT.",
+   "speed": 1.07
+  },
+  {
+   "id": "f2",
+   "type": "fact",
+   "visual": "impact_cross",
+   "accent": "#B2542A",
+   "trans": "zoom",
+   "badge": "HARI ITU",
+   "vo": "Titik jatuhnya di laut dangkal dekat Yucatán, Meksiko. Satu tumbukan melubangi dasar laut sepanjang seratus delapan puluh kilometer, memicu tsunami raksasa, dan melempar batuan panas ke angkasa.",
+   "speed": 1.11
+  },
+  {
+   "id": "f2b",
+   "type": "fact",
+   "visual": "impact_timeline",
+   "accent": "#B2542A",
+   "trans": "rise",
+   "badge": "SATU HARI YANG MENGUBAH SEGALANYA",
+   "vo": "Perhatikan urutan kejadiannya. Dalam hitungan menit, batuan panas menghujani langit. Beberapa jam kemudian, tsunami setinggi gedung menyapu pantai. Setelah itu, langit gelap dan dunia mendingin selama bertahun-tahun.",
+   "speed": 1.08
+  },
+  {
+   "id": "f3",
+   "type": "fact",
+   "visual": "impact_winter",
+   "accent": "#3B4E8C",
+   "trans": "wipe",
+   "badge": "LANGIT JADI GELAP",
+   "vo": "Debu dan gas sulfur menutupi seluruh Bumi. Sinar matahari tertahan sampai lima belas tahun, suhu Bumi jatuh sampai lima belas derajat, dan siang berubah seperti malam.",
+   "speed": 1.07
+  },
+  {
+   "id": "f4",
+   "type": "fact",
+   "visual": "chain_collapse",
+   "accent": "#8C6D1F",
+   "trans": "rise",
+   "badge": "RANTAI MAKANAN RUNTUH",
+   "vo": "Tanpa cahaya, tumbuhan berhenti berfotosintesis. Pemakan tumbuhan kehabisan makanan, lalu pemangsa kehabisan mangsa. Rantai makanan runtuh dari bawah ke atas, dan hampir tiga perempat spesies hilang.",
+   "speed": 1.07
+  },
+  {
+   "id": "f5",
+   "type": "fact",
+   "visual": "evidence",
+   "accent": "#5A6B3B",
+   "trans": "fade",
+   "badge": "BUKTI DI BATUAN",
+   "vo": "Buktinya tersimpan di batuan seluruh dunia: lapisan tipis tanah kaya iridium, logam yang langka di Bumi tapi melimpah di asteroid. Ditambah kawah raksasa di Yucatán, dugaan berubah menjadi bukti.",
+   "speed": 1.08
+  },
+  {
+   "id": "f6",
+   "type": "fact",
+   "visual": "survivors",
+   "accent": "#1F7A6B",
+   "trans": "wipe",
+   "badge": "SIAPA YANG SELAMAT?",
+   "vo": "Yang selamat adalah yang bertubuh kecil dan tidak butuh banyak makan: mamalia kecil, kura-kura, buaya, dan burung. Burung itu sendiri adalah dinosaurus yang masih hidup sampai sekarang.",
+   "speed": 1.11
+  },
+  {
+   "id": "outro",
+   "type": "outro",
+   "accent": "#8C4A2F",
+   "lines": [
+    "SEKARANG",
+    "KAMU TAHU"
+   ],
+   "cta": "IKUTI",
+   "foot": "Fakta sains & misteri, tiap hari",
+   "foot2": "Simpan video ini · bagikan ke teman",
+   "src": "Sumber: PNAS · Science · Nature Geoscience · NASA",
+   "vo": "Ikuti KlikTahu.",
+   "speed": 1.13
+  }
+ ]
+}

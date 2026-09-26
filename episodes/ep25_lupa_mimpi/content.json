@@ -1,0 +1,92 @@
+{
+ "title": "Kenapa Mimpi Cepat Lupa?",
+ "channel": "KlikTahu",
+ "header_badge": "OTAK · TIDUR",
+ "bg_element": "none",
+ "lead_in": 0.6,
+ "tail_intro": 0.8,
+ "tail_fact": 0.8,
+ "tail_outro": 1.2,
+ "scenes": [
+  {
+   "id": "intro",
+   "type": "intro",
+   "visual": "intro_dream",
+   "accent": "#3B4E8C",
+   "shake": 0.0,
+   "lines": [
+    "KENAPA MIMPI",
+    "CEPAT LUPA?"
+   ],
+   "vo": "Kamu baru saja mimpi indah, tapi beberapa menit setelah bangun, ceritanya hilang entah ke mana. Kenapa otak membuang mimpi secepat itu?"
+  },
+  {
+   "id": "f1",
+   "type": "fact",
+   "visual": "rem_sleep",
+   "accent": "#2F6FB5",
+   "trans": "fade",
+   "badge": "KAPAN MIMPI TERJADI?",
+   "vo": "Mimpi paling jelas muncul saat tidur REM. Waktu itu otakmu hampir seaktif saat bangun, tapi tubuhmu dilumpuhkan supaya tidak ikut bergerak. Fase ini datang tiap sembilan puluh menit, dan makin panjang menjelang pagi."
+  },
+  {
+   "id": "f2",
+   "type": "fact",
+   "visual": "two_stores",
+   "accent": "#1F7A6B",
+   "trans": "zoom",
+   "badge": "KENAPA TIDAK TERSIMPAN?",
+   "vo": "Supaya jadi ingatan, sebuah kejadian harus dipindahkan dari hipokampus, gudang sementara, ke korteks, gudang permanen. Nah, saat tidur REM, jalur pemindahan itu justru dimatikan."
+  },
+  {
+   "id": "f3",
+   "type": "fact",
+   "visual": "mch_msg",
+   "accent": "#A33B5B",
+   "trans": "wipe",
+   "badge": "OTAK SENGAJA MELUPAKAN",
+   "vo": "Ada sel khusus di otak, namanya neuron MCH, yang justru menekan gudang memori selama REM. Kata peneliti di jurnal Science, sel ini sengaja mencegah isi mimpi tersimpan."
+  },
+  {
+   "id": "f4",
+   "type": "fact",
+   "visual": "minutes5",
+   "accent": "#7A3FC4",
+   "trans": "rise",
+   "badge": "SEBERAPA CEPAT HILANG?",
+   "vo": "Karena tidak pernah tersimpan rapi, mimpi gampang buyar. Lima menit setelah bangun, separuh isinya hilang. Sepuluh menit kemudian, sembilan puluh persennya lenyap."
+  },
+  {
+   "id": "f5",
+   "type": "fact",
+   "visual": "why_forget",
+   "accent": "#C28A1B",
+   "trans": "fade",
+   "badge": "INI FITUR, BUKAN CACAT",
+   "vo": "Tapi lupa itu bukan kerusakan. Otak sedang menyaring: yang penting disimpan, beban emosinya dilembutkan, dan sisanya dibuang supaya tidak menumpuk."
+  },
+  {
+   "id": "f6",
+   "type": "fact",
+   "visual": "recall_tips",
+   "accent": "#1F4E79",
+   "trans": "wipe",
+   "badge": "CARA INGAT LEBIH BANYAK",
+   "vo": "Kalau kamu ingin mengingatnya, jangan langsung bergerak atau membuka mata. Ulangi satu kata kunci, lalu tulis cepat. Orang yang rutin mencatat mimpi memang mengingat jauh lebih banyak."
+  },
+  {
+   "id": "outro",
+   "type": "outro",
+   "accent": "#3B4E8C",
+   "lines": [
+    "SEKARANG",
+    "KAMU TAHU"
+   ],
+   "cta": "IKUTI",
+   "foot": "Fakta sains & misteri, tiap hari",
+   "foot2": "Simpan video ini · bagikan ke teman",
+   "src": "Sumber: NIH · Science (2019) · Nature (2024)",
+   "vo": "Ikuti KlikTahu."
+  }
+ ]
+}
