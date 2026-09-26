@@ -37,11 +37,16 @@ class Aligner:
         self.model_name = model
         self._m = WhisperModel(**kw)
 
-    def align(self, audio, language="id", beam=5, vad=True):
-        """Selaraskan audio -> daftar Utterance berisi Word ber-stempel waktu."""
+    def align(self, audio, language="id", beam=5, vad=True, prompt=None):
+        """Selaraskan audio -> daftar Utterance berisi Word ber-stempel waktu.
+
+        prompt: teks panduan opsional (transkrip perkiraan) untuk
+        mempertajam segmentasi kata.
+        """
         segments, _info = self._m.transcribe(
             audio, language=language, beam_size=int(beam), temperature=0.0,
-            word_timestamps=True, vad_filter=bool(vad))
+            word_timestamps=True, vad_filter=bool(vad),
+            initial_prompt=prompt)
         out = []
         for i, s in enumerate(segments):
             ws = tuple(
