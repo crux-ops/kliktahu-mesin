@@ -28,7 +28,11 @@ jobs:
       - name: Pasang dependensi mesin
         run: pip install -q -r requirements-engine.txt
       - name: Uji unit + Skia
-        run: python -m pytest tests/ -q --tb=short 2>&1 | tee hasil-uji.txt; test ${PIPESTATUS[0]} -eq 0
+        run: |
+          python -m pytest tests/ -q --tb=short > hasil-uji.txt 2>&1; kode=$?
+          tail -c 3000 hasil-uji.txt
+          python tools/anotasi_gagal.py $kode hasil-uji.txt
+          exit $kode
       - name: Bukti Bagian A (lembar renderer)
         if: success()
         run: python -m kt.proof_a --outdir proof-a
