@@ -6,7 +6,7 @@
 ## Status proyek
 
 - Repo: `crux-ops/kliktahu-mesin` (akun baru, repo publik).
-- Tahap berjalan: **Tahap 2D BERJALAN** - SFX sintetis + ducking (kode di-push, menunggu CI GitHub).
+- Tahap berjalan: **Tahap 2D SELESAI** (26 Sep 2026). Berikutnya: Tahap 2E (audio VO + QC).
 - Berikutnya: verifikasi bukti-A dari Actions, lalu Tahap 2B.
 - Larangan: JANGAN membuat episode/video apa pun sampai pemilik memerintahkan.
 - Semua render/pratinjau/sampel media HANYA di GitHub Actions. Tidak ada render di workspace chat.
@@ -71,8 +71,11 @@ Diketahui pernah ada (file tidak ada di backup, informatif saja):
       Fixture: fixtures/bicara-id.mp3 (neural ID koma-jeda, 34KB).
       Pelajaran: espeak-ng id jelek (0/3); prompt transkrip 6/6 tapi ganda;
       koma-jeda 5/6 bersih -> dipakai + batas 0.8.
-- [~] D. SFX sintetis + ducking (sfx.py: 7 SFX numpy 48k + place + duck_under;
-      9/9 uji lokal; bukti gelombang + 2 demo WAV di CI).
+- [x] D. SFX sintetis + ducking (26 Sep 2026): 7 SFX numpy 48k selaras TX_EVENTS,
+      place + duck_under sidechain + PCM16. 43/43 uji hijau di CI (9 D).
+      bukti/2d-sfx/: gelombang berlabel + demo_sfx.wav + demo_duck.wav.
+      Pelajaran: importorskip buta utk .so gagal-link (pakai try/except);
+      follower gain wajib init=target[0] (anti fade awal).
 - [ ] E. Audio VO (pace 1,8-1,9 k/detik, -14 LUFS, QC isi hilang 30 ms).
 - [ ] F. QC otomatis (zona aman UI, WCAG, frame diam, kedip, A/V sync, golden frame).
 - [ ] G. Encode (H.264 High, bitrate riset terbaru, AAC 256k, faststart).
