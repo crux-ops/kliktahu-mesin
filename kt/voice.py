@@ -334,12 +334,21 @@ def kunci_seed_onnx(onnx_path, seed=SEED):
     for node in m.graph.node:
         if node.op_type not in ACAK:
             continue
+        # *Like memakai seed FLOAT (khas ONNX), lainnya INT.
+        want_float = node.op_type in {"RandomNormalLike", "RandomUniformLike"}
         for attr in node.attribute:
             if attr.name == "seed":
-                attr.i = int(seed)
+                if attr.type == onnx.AttributeProto.FLOAT:
+                    attr.f = float(seed)
+                else:
+                    attr.i = int(seed)
                 break
         else:
-            node.attribute.append(helper.make_attribute("seed", int(seed)))
+            if want_float:
+                node.attribute.append(helper.make_attribute("seed",
+                                                            float(seed)))
+            else:
+                node.attribute.append(helper.make_attribute("seed", int(seed)))
         n += 1
     onnx.save(m, str(onnx_path))
     return n
@@ -387,6 +396,9 @@ def sintesis_piper(voice, teks, sr, length_scale=None, seed=SEED):
     cfg = SynthesisConfig(length_scale=(None if length_scale is None
                                         else float(length_scale)),
                           normalize_audio=False)
+    buat = getattr(voice, "_kt_sesi_baru", None)
+    if buat is not None:
+        voice.session = buat()  # sesi segar -> pencacah acak dari awal
     pot = []
     for c in voice.synthesize(str(teks), syn_config=cfg):
         pot.append(np.asarray(c.audio_int16_array, dtype=np.float32)
