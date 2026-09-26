@@ -38,10 +38,6 @@ PIPER_URL = ("https://huggingface.co/rhasspy/piper-voices/resolve/main/"
              "id/id_ID/news_tts/medium/id_ID-news_tts-medium")
 CHATTER_REPO = "grandhigh/Chatterbox-TTS-Indonesian"  # Apache-2.0
 CHATTER_CKPT = "t3_cfg.safetensors"
-CV_REPOS = ("mozilla-foundation/common_voice_17_0",
-            "mozilla-foundation/common_voice_16_1",
-            "mozilla-foundation/common_voice_15_0",
-            "mozilla-foundation/common_voice_13_0")
 
 
 # ---------------- fungsi murni ----------------
@@ -323,6 +319,32 @@ def unduh_berkas(url, path, min_byte=1000):
     return path
 
 
+def kunci_seed_onnx(onnx_path, seed=SEED):
+    """Tanam seed ke node acak ONNX (RandomNormal/dll) agar deterministik.
+
+    VITS membangkitkan noise di dalam graf; tanpa seed, tiap render beda.
+    Transformasi idempoten. Kembalikan jumlah node yang dikunci.
+    """
+    import onnx
+    from onnx import helper
+    ACAK = {"RandomNormal", "RandomUniform", "RandomNormalLike",
+            "RandomUniformLike"}
+    m = onnx.load(str(onnx_path))
+    n = 0
+    for node in m.graph.node:
+        if node.op_type not in ACAK:
+            continue
+        for attr in node.attribute:
+            if attr.name == "seed":
+                attr.i = int(seed)
+                break
+        else:
+            node.attribute.append(helper.make_attribute("seed", int(seed)))
+        n += 1
+    onnx.save(m, str(onnx_path))
+    return n
+
+
 def pastikan_piper(cache_dir):
     """Pastikan model Piper id setempat. Kembalikan {onnx, json, sr}."""
     d = os.path.join(str(cache_dir), "piper")
@@ -331,6 +353,8 @@ def pastikan_piper(cache_dir):
     js = onnx + ".json"
     unduh_berkas(PIPER_URL + ".onnx", onnx, 10_000_000)
     unduh_berkas(PIPER_URL + ".onnx.json", js, 1000)
+    n_acak = kunci_seed_onnx(onnx)
+    print(f"piper node acak dikunci: {n_acak}", flush=True)
     with open(js, encoding="utf-8") as f:
         cfg = json.load(f)
     return {"onnx": onnx, "json": js,
@@ -397,25 +421,6 @@ def sintesis_chatterbox(model, teks, prompt_wav, temperature=0.8, seed=SEED):
     return ke_48k(x, int(model.sr))
 
 
-def _repo_cv_terbaru():
-    """Cari repo Common Voice Mozilla terbaru lewat API Hub."""
-    from huggingface_hub import list_datasets
-    cands = []
-    for ds in list_datasets(author="mozilla-foundation",
-                            search="common_voice"):
-        nama = ds.id.split("/")[-1]
-        if nama.startswith("common_voice_"):
-            cands.append(ds.id)
-    if not cands:
-        raise RuntimeError("tak ada repo common_voice di mozilla-foundation")
-
-    def kunci(rid):
-        angka = "".join(ch if ch.isdigit() else " " for ch in rid).split()
-        return tuple(int(p) for p in angka) if angka else (0,)
-    cands.sort(key=kunci, reverse=True)
-    return cands[0]
-
-
 def _audio_ke_array(au):
     au = au or {}
     arr = au.get("array")
@@ -424,98 +429,63 @@ def _audio_ke_array(au):
     return arr, int(au.get("sampling_rate") or 0)
 
 
-def _coba_prompt_cv():
-    """Lempar (arr_48k, meta) dari Common Voice id, atau raise berpesan."""
-    from datasets import load_dataset
-    repo = _repo_cv_terbaru()
-    try:
-        ds = load_dataset(repo, "id", split="validated", streaming=True)
-    except Exception as e:
-        raise RuntimeError(f"{repo}: {type(e).__name__} {e}")
-    PILIH = {"male", "masculine", "m", "pria", "laki-laki"}
-    for ex in ds:
-        g = str(ex.get("gender") or "").strip().lower()
-        if g not in PILIH:
-            continue
-        arr, au_sr = _audio_ke_array(ex.get("audio"))
-        if arr is None or au_sr <= 0:
-            continue
-        arr = np.asarray(arr, dtype=np.float32).reshape(-1)
-        if arr.size / au_sr < 1.0:
-            continue
-        meta = {"sumber": "common_voice", "lisensi": "CC0-1.0", "repo": repo,
-                "kalimat": str(ex.get("sentence") or ""), "gender": g,
-                "sr_asal": au_sr, "dur_asal": arr.size / au_sr}
-        return ke_48k(arr, au_sr), meta
-    raise RuntimeError(f"{repo}: tak ada klip pria")
+def ambil_prompt(cache_dir):
+    """Ambil 1 klip pria Indonesia (FLEURS, CC-BY-4.0) untuk prompt kandidat B.
 
-
-def _coba_prompt_fleurs():
-    """Cadangan: FLEURS Indonesia (CC-BY-4.0), pilih pria via F0."""
+    Common Voice tidak dipakai (repo HF kosong tanpa token). Pilih
+    deterministik: cantum test/validation pertama berdurasi 2-12 dtk dengan
+    F0 85-170 Hz. Kembalikan (path_wav_48k, meta).
+    """
     from datasets import get_dataset_config_names, load_dataset
+    d = os.path.join(str(cache_dir), "prompt")
+    os.makedirs(d, exist_ok=True)
+    out = os.path.join(d, "prompt_pria.wav")
+    meta_path = os.path.join(d, "prompt_pria.json")
+    if os.path.exists(out) and os.path.exists(meta_path):
+        with open(meta_path, encoding="utf-8") as f:
+            return out, json.load(f)
     repo = "google/fleurs"
     try:
         cfgs = get_dataset_config_names(repo)
     except Exception as e:
-        raise RuntimeError(f"{repo}: {type(e).__name__} {e}")
+        raise RuntimeError(f"prompt {repo}: {type(e).__name__} {e}")
     cfg = "id_id" if "id_id" in cfgs else None
     if cfg is None:
         idmulai = sorted(c for c in cfgs if c.startswith("id"))
         if not idmulai:
-            raise RuntimeError(f"{repo}: tanpa config id")
+            raise RuntimeError(f"prompt {repo}: tanpa config id")
         cfg = idmulai[0]
-    try:
-        ds = load_dataset(repo, cfg, split="test", streaming=True)
-    except Exception as e:
-        raise RuntimeError(f"{repo}/{cfg}: {type(e).__name__} {e}")
-    for ex in ds:
-        arr, au_sr = _audio_ke_array(ex.get("audio"))
-        if arr is None or au_sr <= 0:
-            continue
-        arr = np.asarray(arr, dtype=np.float32).reshape(-1)
-        dur = arr.size / au_sr
-        if not 2.0 <= dur <= 12.0:
-            continue
-        a48 = ke_48k(arr, au_sr)
-        f0 = f0_median(a48, SR)
-        if f0 is None or not 85.0 <= f0 <= 170.0:
-            continue
-        meta = {"sumber": "fleurs", "lisensi": "CC-BY-4.0 Google",
-                "repo": f"{repo}/{cfg}",
-                "kalimat": str(ex.get("transcription") or ""),
-                "gender": "pria(F0)", "sr_asal": au_sr, "dur_asal": dur,
-                "utt": str(ex.get("id") or ""), "f0": f0}
-        return a48, meta
-    raise RuntimeError(f"{repo}/{cfg}: tak ada klip pria (F0)")
-
-
-def ambil_prompt_cv(cache_dir):
-    """Ambil 1 klip pria Indonesia untuk prompt kandidat B.
-
-    Urutan: Common Voice (CC0) -> FLEURS (CC-BY-4.0, pilih via F0).
-    Kembalikan (path_wav_48k, meta).
-    """
-    d = os.path.join(str(cache_dir), "cv")
-    os.makedirs(d, exist_ok=True)
-    out = os.path.join(d, "prompt_cv_pria.wav")
-    meta_path = os.path.join(d, "prompt_cv_pria.json")
-    if os.path.exists(out) and os.path.exists(meta_path):
-        with open(meta_path, encoding="utf-8") as f:
-            return out, json.load(f)
-    galat = []
-    for nama, fn in (("common_voice", _coba_prompt_cv),
-                     ("fleurs", _coba_prompt_fleurs)):
+    for split in ("test", "validation"):
         try:
-            arr, meta = fn()
-            tulis_wav_16(out, arr, SR)
+            ds = load_dataset(repo, cfg, split=split, streaming=True)
+        except Exception as e:
+            print(f"prompt {cfg}/{split} gagal: {e}", flush=True)
+            continue
+        for ex in ds:
+            arr, au_sr = _audio_ke_array(ex.get("audio"))
+            if arr is None or au_sr <= 0:
+                continue
+            arr = np.asarray(arr, dtype=np.float32).reshape(-1)
+            dur = arr.size / au_sr
+            if not 2.0 <= dur <= 12.0:
+                continue
+            a48 = ke_48k(arr, au_sr)
+            f0 = f0_median(a48, SR)
+            if f0 is None or not 85.0 <= f0 <= 170.0:
+                continue
+            meta = {"sumber": "fleurs", "lisensi": "CC-BY-4.0 Google",
+                    "repo": f"{repo}/{cfg}", "split": split,
+                    "kalimat": str(ex.get("transcription")
+                                   or ex.get("sentence") or ""),
+                    "gender": "pria(F0)", "sr_asal": au_sr, "dur_asal": dur,
+                    "utt": str(ex.get("id") or ""), "f0": f0}
+            tulis_wav_16(out, a48, SR)
             with open(meta_path, "w", encoding="utf-8") as f:
                 json.dump(meta, f, ensure_ascii=False, indent=1)
-            print(f"prompt: {nama} {meta['repo']}", flush=True)
+            print(f"prompt: {repo}/{cfg}/{split} utt={meta['utt']}",
+                  flush=True)
             return out, meta
-        except Exception as e:
-            galat.append(f"{nama}: {e}")
-            print(f"prompt {nama} gagal: {e}", flush=True)
-    raise RuntimeError("prompt gagal: " + " | ".join(galat))
+    raise RuntimeError(f"prompt {repo}/{cfg}: tak ada klip pria (F0)")
 
 
 def _dekode_mp3(data):

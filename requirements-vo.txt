@@ -13,6 +13,8 @@ skia-python==144.0.post2
 pedalboard==0.9.25
 pyloudnorm==0.2.0
 piper-tts==1.8.0
+onnx==1.23.0
+setuptools>=75
 torch==2.6.0
 torchaudio==2.6.0
 transformers==4.46.3

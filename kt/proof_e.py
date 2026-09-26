@@ -155,12 +155,13 @@ def main():
           f"puncak {rA['puncak_db']:.1f} F0 {rA['f0_median']} det={det_a}",
           flush=True)
 
-    # --- B: Chatterbox-ID + prompt CV pria ---
-    prompt_path, prompt_meta = V.ambil_prompt_cv(cache)
+    # --- B: Chatterbox-ID + prompt pria ---
+    prompt_path, prompt_meta = V.ambil_prompt(cache)
     xp, _ = V.baca_wav_16(prompt_path)
     f0p = V.f0_median(xp, V.SR)
     print(f"prompt {prompt_meta['repo'].split('/')[-1]} "
           f"dur={prompt_meta['dur_asal']:.1f}s F0={f0p}", flush=True)
+    catat("E prompt", f"F0={f0p} pyin={f0_pyin(xp, V.SR)} meta={prompt_meta}")
     print(f"kalimat prompt: {prompt_meta['kalimat'][:80]}", flush=True)
     model = V.muat_chatterbox()
     print("chatterbox dimuat, sintesis 1/2...", flush=True)
@@ -202,7 +203,7 @@ def main():
         [f"prompt {sumber} {repo_pendek}", f'"{kal}"'])
     stat_a = ("A. PIPER id_ID-news_tts-medium (pria, MIT)",
               {"y": rA["y"], "lines": linesA}, TEAL)
-    stat_b = ("B. CHATTERBOX-ID + prompt Common Voice pria (CC0)",
+    stat_b = ("B. CHATTERBOX-ID + prompt pria (FLEURS CC-BY)",
               {"y": rB["y"], "lines": linesB}, ACCENT)
     qc_lines = [
         f"A liputan {lipA['cocok']}/{lipA['total']} hilang {qcA['n_hilang']} "

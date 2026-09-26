@@ -29,8 +29,9 @@
 
 ## ID suara narator
 
-- Status: AUDISI BERJALAN. Kandidat A=piper id_ID-news_tts-medium (pria, MIT);
-  B=chatterbox-id + prompt CV pria CC0 (Apache-2.0). Klip di bukti/2e-vo/ usai CI.
+- Status: AUDISI BERJALAN. Kandidat A=piper id_ID-news_tts-medium (MIT);
+  B=chatterbox-id + prompt pria FLEURS CC-BY (Apache-2.0). Klip di bukti/2e-vo/.
+  (CV pindah ke FLEURS: repo CV kosong tanpa token; gender A dicek ulang F0.)
 
 ## Riwayat topik (judul episode lama - JANGAN DIULANG)
 
