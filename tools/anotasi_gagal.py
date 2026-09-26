@@ -8,6 +8,8 @@ import sys
 
 def main():
     kode = sys.argv[1] if len(sys.argv) > 1 else "?"
+    if kode == "0":
+        return  # uji lolos: diam, tanpa anotasi
     berkas = sys.argv[2] if len(sys.argv) > 2 else "hasil-uji.txt"
     try:
         with open(berkas, encoding="utf-8", errors="replace") as f:
