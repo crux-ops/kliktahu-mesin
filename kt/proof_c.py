@@ -58,8 +58,8 @@ def _kartu(c, tc, x, y, w, label, teks, aksen):
 
 def draw_bar_chart(r, y, judul, words, nilai, maksimum, warna, fmt):
     c, tc, W = r.canvas, r.text, r.w
-    tc.draw_center(c, W / 2, y + 18, judul, "Poppins-SemiBold.ttf", 32, INK)
-    y += 46
+    tc.draw_center(c, W / 2, y + 16, judul, "Poppins-SemiBold.ttf", 30, INK)
+    y += 40
     x0, x1 = 300, 920
     for w, v in zip(words, nilai):
         tok = (normalize_token(w.text) or w.text)[:12]
@@ -70,9 +70,9 @@ def draw_bar_chart(r, y, judul, words, nilai, maksimum, warna, fmt):
         if (x1 - x0) * frac > 1.0:
             c.drawRoundRect(skia.Rect.MakeXYWH(x0, y, (x1 - x0) * frac, 30),
                             8, 8, fill_paint(warna))
-        tc.draw_center(c, 972, y + 16, fmt(v), "Poppins-Regular.ttf", 24, INK)
-        y += 42
-    return y + 12
+        tc.draw_center(c, 972, y + 15, fmt(v), "Poppins-Regular.ttf", 23, INK)
+        y += 37
+    return y + 8
 
 
 def draw_sheet(r: Renderer, seed: int, words, cov, dur):
@@ -149,7 +149,7 @@ def draw_sheet(r: Renderer, seed: int, words, cov, dur):
                        "Poppins-Regular.ttf", 28, INK)
         tc.draw_center(c, 880, y + 24, f"{w.conf:.2f}",
                        "Poppins-Regular.ttf", 28, INK)
-        y += 46
+        y += 44
     y = draw_bar_chart(r, y, "KEYAKINAN PER KATA", words,
                        [w.conf for w in words], 1.0, TEAL,
                        lambda v: f"{v:.2f}")
@@ -157,7 +157,7 @@ def draw_sheet(r: Renderer, seed: int, words, cov, dur):
                        [w.end - w.start for w in words],
                        max([w.end - w.start for w in words] + [0.01]), GOLD,
                        lambda v: f"{v:.2f}")
-    assert y < r.h - 40, f"lembar meluap: {y} >= {r.h}"
+    assert y < r.h - 100, f"lembar meluap ke footer: {y} >= {r.h - 100}"
     tc.draw_center(c, W / 2, r.h - 70,
                    "2x selaras identik (ms) - monoton - stempel kata",
                    "Poppins-Regular.ttf", 26, MUTED)
