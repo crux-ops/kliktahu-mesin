@@ -116,6 +116,21 @@ def draw_sheet(r, aud, stat_a, stat_b, qc_lines):
                    "Poppins-Regular.ttf", 26, MUTED)
 
 
+def catat(judul, pesan):
+    """Anotasi GitHub agar diagnostik terbaca via API."""
+    p = str(pesan).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    print(f"::notice title={judul}::{p}", flush=True)
+
+
+def f0_pyin(y, sr):
+    """Pembanding F0 independen (librosa pyin). Hanya diagnostik."""
+    import librosa
+    f, _, _ = librosa.pyin(np.asarray(y, dtype=np.float32), fmin=50,
+                           fmax=500, sr=int(sr))
+    v = f[~np.isnan(f)]
+    return float(np.median(v)) if v.size >= 3 else None
+
+
 def selaras(aligner, wav_path):
     uts = aligner.align(str(wav_path), language="id", beam=5, vad=True,
                         prompt=None)
@@ -154,6 +169,9 @@ def main():
     print(f"A pace {rA['pace_akhir']:.2f} LUFS {rA['lufs_akhir']:.2f} "
           f"puncak {rA['puncak_db']:.1f} F0 {rA['f0_median']} det={det_a}",
           flush=True)
+    catat("E kandidat A", f"det={det_a} pace={rA['pace_akhir']:.2f} "
+          f"LUFS={rA['lufs_akhir']:.2f} puncak={rA['puncak_db']:.1f} "
+          f"F0={rA['f0_median']} pyin={f0_pyin(rA['y'], V.SR)}")
 
     # --- B: Chatterbox-ID + prompt pria ---
     prompt_path, prompt_meta = V.ambil_prompt(cache)
@@ -172,10 +190,13 @@ def main():
     rB = V.rantai_vo(b1, V.SR, n_kata)
     pB = os.path.join(a.outdir, "demo_vo_chatterbox.wav")
     V.tulis_wav_16(pB, rB["y"])
-    shutil.copy(prompt_path, os.path.join(a.outdir, "prompt_cv_pria.wav"))
+    shutil.copy(prompt_path, os.path.join(a.outdir, "prompt_pria.wav"))
     print(f"B pace {rB['pace_akhir']:.2f} LUFS {rB['lufs_akhir']:.2f} "
           f"puncak {rB['puncak_db']:.1f} F0 {rB['f0_median']} det={det_b}",
           flush=True)
+    catat("E kandidat B", f"det={det_b} pace={rB['pace_akhir']:.2f} "
+          f"LUFS={rB['lufs_akhir']:.2f} puncak={rB['puncak_db']:.1f} "
+          f"F0={rB['f0_median']} pyin={f0_pyin(rB['y'], V.SR)}")
 
     # --- QC selaras whisper pada berkas final ---
     al = Aligner(model="base", cache_dir=os.path.join(cache, "whisper"))
