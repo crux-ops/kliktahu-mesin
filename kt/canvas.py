@@ -121,13 +121,15 @@ class TextCache:
 
 
 def soft_shadow(canvas, x, y, w, h, r, dy=14, sigma=22, alpha=110):
-    """Bayangan lembut manual (3 lapis, tanpa API berisiko)."""
-    for i in (2, 1, 0):
-        k = (i + 1) / 3.0
-        canvas.saveLayer(None, blur_paint(sigma * k, int(alpha / 3)))
-        rect = skia.Rect.MakeXYWH(x, y + dy * k, w, h)
-        canvas.drawRoundRect(rect, r, r, fill_paint(argb(255, 0, 0, 0)))
-        canvas.restore()
+    """Bayangan lembut: sprite hitam kecil digambar buram (tanpa saveLayer)."""
+    pad = int(sigma * 3 + dy + 8)
+    sw, sh = max(2, int(w + pad * 2)), max(2, int(h + pad * 2))
+    tmp = skia.Surface(sw, sh)
+    tc = tmp.getCanvas()
+    tc.drawRoundRect(skia.Rect.MakeXYWH(pad, pad, w, h), r, r,
+                     fill_paint(argb(255, 0, 0, 0)))
+    snap = tmp.makeImageSnapshot()
+    canvas.drawImage(snap, x - pad, y - pad + dy, blur_paint(sigma, alpha))
 
 
 def glass_panel(surface, x, y, w, h, r, blur=22, tint=(255, 255, 255, 46),
@@ -163,19 +165,33 @@ def star_path(cx, cy, r_out, r_in, n=5, rot=-90.0):
 
 def _snapshot_to_pil(surface, target_w, target_h):
     img = surface.makeImageSnapshot()
-    w, h = img.width(), img.height()
-    raw = None
+    # Jalur 1: bytes mentah langsung (tercepat).
     try:
         raw = img.tobytes()
+        w, h = img.width(), img.height()
+        pil = Image.frombytes("RGBA", (w, h), raw)
     except Exception:
-        raw = None
-    if raw is None:  # cadangan: PeekPixels
+        pil = None
+    # Jalur 2: ronde PNG via SkData + PIL (paling kompatibel).
+    if pil is None:
+        try:
+            data = img.encodeToData()
+            if data is not None:
+                pil = Image.open(io.BytesIO(bytes(data))).convert("RGBA")
+        except Exception:
+            pil = None
+    # Jalur 3: baca memori Pixmap via ctypes (cadangan terakhir).
+    if pil is None:
+        import ctypes
         pm = skia.Pixmap()
         if not img.peekPixels(pm):
             raise RuntimeError("gagal membaca piksel snapshot Skia")
-        raw = bytes(pm)
-        w, h = pm.width(), pm.height()
-    pil = Image.frombytes("RGBA", (w, h), raw)
+        w, h, row = pm.width(), pm.height(), pm.rowBytes()
+        buf = ctypes.string_at(pm.addr(), h * row)
+        wide = np.frombuffer(buf, dtype=np.uint8).reshape(h, row)
+        arr = wide[:, :w * 4].reshape(h, w, 4)
+        pil = Image.fromarray(arr.copy(), "RGBA")
+    w, h = pil.size
     if (w, h) != (target_w, target_h):
         pil = pil.resize((target_w, target_h), Image.LANCZOS)
     return pil.convert("RGB")

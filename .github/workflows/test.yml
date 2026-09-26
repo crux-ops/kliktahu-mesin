@@ -28,12 +28,16 @@ jobs:
       - name: Pasang dependensi mesin
         run: pip install -q -r requirements-engine.txt
       - name: Uji unit + Skia
-        run: python -m pytest tests/ -q
+        run: python -m pytest tests/ -q --tb=short 2>&1 | tee hasil-uji.txt; test ${PIPESTATUS[0]} -eq 0
       - name: Bukti Bagian A (lembar renderer)
+        if: success()
         run: python -m kt.proof_a --outdir proof-a
       - name: Unggah bukti
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: bukti-a-renderer
-          path: proof-a/*
+          path: |
+            proof-a/*
+            hasil-uji.txt
           retention-days: 14
