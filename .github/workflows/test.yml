@@ -58,6 +58,6 @@ jobs:
           cp proof-b/*.png bukti/2b-motion/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add bukti/2a-renderer/
+          git add bukti/2a-renderer/ bukti/2b-motion/
           git diff --cached --quiet && echo "bukti tak berubah" || (
             git commit -q -m "Bukti: lembar A + montase B [skip ci]" && git push)
